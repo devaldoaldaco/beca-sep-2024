@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda tarea</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .header{
+            background-color: rgba(238, 156, 231, 0.86);
+        }
+        .header_h1{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 1%;
+        }
+        .header_h2{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+        .nav{
+            background-color: yellow;
+        }
+        .nav_ul{
+            display: flex;
+            list-style: none;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav_ul_li{
+            flex-grow: 1;
+        }
+        .main{
+            display: inline-block
+        }
+        .main_article{
+            background-color: pink;
+            padding: 25px;
+            margin: 0;
+            float: left;
+            width: 64%;
+            height: 400px;
+        }
+        .main_article_section{
+            background-color: aqua;
+            display: flex;
+            padding: 20px;
+        }
+        .section_img{
+            width: 25%;
+        }
+        .section_p{
+            width: 75%;
+            color: rgb(255, 255, 255);
+            padding: 5%;
+        }
+        .section_p2{
+            width: 100%;
+            color: rgb(255, 255, 255);
+        }
+        .aside{
+            background-color: rgb(129, 254, 129);
+            margin: 0;
+            width: 32%;
+            height: 450px;
+            float: right;
+        }
+        .aside_p{
+            padding: 25px;
+            text-align: center;
+        }
+        .aside_ul{
+            text-align: center;
+            list-style: none;
+            padding-top: 35px;
+        }
+        .footer{
+            background-color: rgb(121, 121, 246);
+            display: flex;
+            list-style: none;
+        }
+        .footer_ul{
+            padding: 2%;
+        }
+        .footer_ul_li{
+            color: rgb(85, 85, 85);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header_h1"> Segunda Tarea</h1>
+        <h2 class="header_h2"> Sub Segunda Tarea</h2>
+    </header>
+    <nav class="nav">
+        <ul class="nav_ul">
+            <li class="nav_ul_li">A</li>
+            <li class="nav_ul_li">B</li>
+            <li class="nav_ul_li">C</li>
+            <li class="nav_ul_li">D</li>
+            <li class="nav_ul_li">F</li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article class="main_article">
+            <section class="main_article_section">
+                <img class="section_img" src="https://blog.jumboprinters.com/wp-content/uploads/2021/09/consejos-imagenes.jpg"" alt="">
+                <p class="section_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </section>
+            <br>
+            <section class="main_article_section">
+                <p class="section_p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </section>
+        </article>
+        <aside class="aside">
+            <p class="aside_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <ul class="aside_ul">
+                <li class="aside_ul_li">A</li>
+                <li class="aside_ul_li">D</li>
+                <li class="aside_ul_li">C</li>
+            </ul>
+        </aside>
+    </main>
+    <footer class="footer">
+        <ul class="footer_ul">
+            <li class="footer_ul_li">A</li>
+            <li class="footer_ul_li">B</li>
+            <li class="footer_ul_li">C</li>
+        </ul>
+        <ul class="footer_ul">
+            <li class="footer_ul_li">A</li>
+            <li class="footer_ul_li">B</li>
+            <li class="footer_ul_li">C</li>
+        </ul>
+    </footer>
+</body>
+</html>
