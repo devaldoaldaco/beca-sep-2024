@@ -27,7 +27,6 @@ a{
 }
 ul{
     list-style-type: none;
-    display: flex;
     padding: 0%;
 }
 
@@ -48,7 +47,6 @@ p{
     background-color: rgb(160, 214, 226);
     text-align: justify;
     padding: 5% 10%;
-    display:inline-flex;
 }
 
 img{
@@ -71,8 +69,6 @@ img{
     right: 0%;
     position: fixed;
     background-color: #b4faa3;
-    padding-top: 10px; /*indica el espacio o la distancia entre el contenido y los bordes del elemento 
-    que contiene*/
 }
 
 .p2{
