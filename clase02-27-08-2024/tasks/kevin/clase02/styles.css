@@ -13,17 +13,10 @@ menu {
     margin:0;
     }
 
-h1{
+header h1, h2, h3{
     text-align: center;
     }
 
-h2{
-    text-align: center;
-    }
-
-h3{
-    text-align: center;
-    }
 
 ul {
     list-style-type: none; /*Modifica la viñetta de la lista*/
@@ -79,4 +72,3 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     }
-
