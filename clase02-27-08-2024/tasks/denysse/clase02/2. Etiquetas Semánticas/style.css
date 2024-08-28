@@ -1,0 +1,108 @@
+/* estilos header*/
+header{
+    background-color: #fdb7a4; /* edita el color del fondo del header*/
+    padding: 20px;  /**/
+    text-align: center; /*alinea el texto en este caso lo centra*/
+}
+
+h1{
+    color: red; /*indica el color del titulo*/
+}
+
+h3{
+    color: rgb(104, 6, 6); /*indica el color del titulo*/
+}
+
+a{
+    padding: 15px; /*indica */
+}
+
+
+/* Estilos id Menú*/
+.menu{
+    background-color: #faf9a3;
+    padding: 20px;
+    text-align: center;
+    position: initial;
+}
+ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
+li{
+    margin: auto;
+}
+
+/*Estilos Artículo*/
+
+article{
+    background-color: #f5d5f8; /* edita el color del fondo del article*/
+    width: 76%;
+    padding: 5%;
+
+}
+
+p{
+    background-color: rgb(160, 214, 226);
+    text-align: justify;
+    padding: 5% 10%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+/* Sidebar*/
+
+.sidebart{
+    color: black;
+    font-size:large;
+    text-align: center;
+}
+.sidebar{
+    height: 100%; /*indica*/
+    width: 208px;
+    top: 20px;
+    right: 0%;
+    position: fixed;
+    background-color: #b4faa3;
+}
+
+.p2{
+    background-color: #b4faa3; /*indica el color del fondo de este elemento*/
+    color: black; /*indica el color del texto*/
+    text-align: justify; /*alinea el texto, en este caso lo justifica*/
+    padding: 10% 15%; /*indica el espacio o la distancia entre el contenido y los bordes del elemento 
+    que contiene*/
+}
+
+ol{
+    list-style-type: circle; /*indica el estilo de viñeta para la lista*/
+}
+
+/*-----Footer------*/
+
+.footer{
+    background-color: #9181be;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.footer p{
+    background-color: #9181be;
+    text-align: left;
+    padding: 0%; 
+}
+
+.footer ul{
+    list-style-type: none;
+    margin: 10px;
+}
+
+
