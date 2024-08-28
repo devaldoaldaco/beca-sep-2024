@@ -1,0 +1,82 @@
+header {
+    background-color: salmon; 
+    color: white;
+    text-align: center; /*Modifica la alineación del texto*/
+    padding: 20px;
+    margin:0;
+    }
+
+menu {
+    background-color:khaki; 
+    padding: 10px;
+    text-align: center;
+    margin:0;
+    }
+
+h1{
+    text-align: center;
+    }
+
+h2{
+    text-align: center;
+    }
+
+h3{
+    text-align: center;
+    }
+
+ul {
+    list-style-type: none; /*Modifica la viñetta de la lista*/
+    
+    }
+
+.horizontal {
+    display: inline; /*Permite que la lista sea horizontal*/
+    margin: 0 20px;
+    }
+
+main {
+    display: grid; 
+    grid-template-columns: 2fr 1fr; /* Divide el espacio*/
+    gap: 0; /* Espacio entre las columnas */
+    margin: 0;
+    }   
+
+article {
+    background-color: lightpink;
+    padding: 20px;
+    }
+
+aside {
+    background-color: lightgreen;
+    padding: 20px;
+    }
+
+section{
+    background-color: cyan;
+    padding: 20px;
+    border: 10px; /*Añade borde de la imagen*/
+    border-radius: 8px;
+    margin: 20px 0;
+    }
+    
+Figure {
+    display: flex; /* Alinea horizontalmente la imagen y el texto */
+    align-items: center; 
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    margin: 0; 
+    }
+    
+figcaption {
+    flex: 1; /* Permite que el texto ocupe el espacio al lado de la imagen */
+    }
+
+footer{
+    background-color:lightblue;
+    padding: 20px;
+    margin:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    }
+
