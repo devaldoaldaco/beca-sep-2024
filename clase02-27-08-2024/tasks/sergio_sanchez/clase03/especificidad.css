@@ -1,0 +1,32 @@
+span#test {
+    color: green;
+}
+main span {
+    color: blue !important;
+}
+span {
+    color: red;
+}
+
+/*Especificidad basada en la forma*/
+#foo {
+    color: green;
+  }
+[id="foo"] {
+    color: purple;
+}
+
+/* Ignorancia de proximidad en el árbol */
+main h1 {
+    color: green;
+  }
+html h1 {
+    color: purple;
+}
+/* Declaración directa vs estilos heredados */
+#parent {
+    color: green;
+  }
+h1 {
+    color: purple;
+}

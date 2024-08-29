@@ -1,0 +1,39 @@
+p {
+    height: 100px;
+    background-color: grey;
+    border-radius: 10px;
+}
+.sec3 {
+    width: 100%;
+}
+.sec1 {
+    width: 30%;
+    height: 400px;
+}
+.sec2{
+    float: right;
+    width: 69%;
+    height: 415px; 
+    position: relative;
+    top: -420px;
+}
+h1 {
+    background-color: blue;
+    height: 64%;
+    border-radius: 10px;
+}
+h2 {
+    background-color: rgb(255, 0, 60);
+    height: 35%;
+    border-radius: 10px;
+}
+h3 {
+    background-color: yellow;
+    height: 100%;
+    border-radius: 10px;
+}
+h4 {
+    height: 100px;
+    background-color: rgb(165, 92, 249);
+    border-radius: 10px;
+}
