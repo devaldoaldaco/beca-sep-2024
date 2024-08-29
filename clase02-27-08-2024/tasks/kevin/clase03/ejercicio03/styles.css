@@ -1,0 +1,7 @@
+.texto{
+    color: red;
+}
+
+[data-color="blue"]{
+    color: blue;
+}
