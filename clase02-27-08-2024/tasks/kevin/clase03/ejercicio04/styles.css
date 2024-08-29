@@ -1,0 +1,57 @@
+header{
+    display: block;
+    background-color: gray;
+    padding: 60px;
+    text-align: center;
+    margin: 0px;
+    border: 40px;
+    border-radius: 20px;
+}
+
+
+article{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.seccionSuperior{
+    display: block;
+    background-color: rgb(43, 123, 150);
+    border: 10px;
+    border-radius: 5px;
+    padding: 200px;
+    margin: 10px;
+    border: 40px;
+    border-radius: 20px;
+}
+    
+.seccionInferior{
+    display: block;
+    background-color: salmon;
+    border: 10px;
+    border-radius: 5px;
+    padding: 100px;
+    margin: 10px;
+    border: 40px;
+    border-radius: 20px;
+}
+
+aside{
+    display: block;
+    background-color: rgba(244, 217, 9, 0.88);
+    height: 610px;
+    width: 940px;
+    border: 40px;
+    border-radius: 20px;
+}
+
+footer{
+    display: block;
+    background-color: rgb(195, 174, 238);
+    padding: 60px;
+    border: 40px;
+    border-radius: 20px;
+}
+
+
