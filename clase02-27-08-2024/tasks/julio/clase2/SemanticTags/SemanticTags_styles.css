@@ -1,0 +1,88 @@
+
+header{
+    background-color: #f5b7b1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+header h1,h3{
+    background-color: white;
+    margin: 0.5em;
+    width:fit-content;
+}
+
+nav{
+    background-color: orange;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li, a{
+    text-decoration: none;
+    margin: .5rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height:50vh;
+}
+
+main{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F5ACF6;
+}
+
+main section{
+    background-color: rgb(117, 117, 240);
+    margin: 1rem;
+    display:flex;
+    align-items: center;
+}
+
+main section img{
+    width: 30%;
+    height:90%;
+    margin: 0.5rem;
+}
+
+aside{
+    width: 30%;
+    height: 100%;
+    background: rgb(161, 232, 161);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside article{
+    margin: 1rem;
+    background-color: rgb(241, 241, 172);
+}
+
+footer{
+    background: #581845;
+    display: flex;
+    align-items: center;
+    height:20vh;
+}
+
+footer p{
+    color: white;
+    margin: 1rem;
+}
