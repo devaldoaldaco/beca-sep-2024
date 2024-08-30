@@ -1,0 +1,40 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+#texto{
+    display: block;
+    width: 50%;
+    align-content: center;
+    text-align: justify;
+    padding: 5%;
+    color: white;
+}
+
+section{
+    display: flex;
+    background-color: #2b1f44;
+}
+p{
+    margin-top: 2%;
+    font-size: x-large;
+}
+h1{
+    display: inline;
+    font-size: 3rem;
+    color: blueviolet;
+}
+.title{
+    font-size: 3rem;
+}
+#cifras{
+    display: flex;
+    margin-top: 10%;
+    font-size: x-large;
+}
+h3{
+    margin-right: 15%;
+}
+h3 p{
+    font-size:small;
+}
