@@ -1,0 +1,69 @@
+/* Margenes en cero*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: #f3b1b1;
+    padding: 18px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(252, 238, 186);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: inline;
+    margin-right: 70px;
+    padding: 0;
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.main-content {
+    flex: 1;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+    background-color: rgb(248, 204, 238);
+}
+
+aside {
+    width: 100px;
+    padding: 70px;
+    background-color: rgb(188, 240, 181);
+    display: flex;
+    flex-direction: column;
+}
+
+section, article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px; 
+    width: 80%; 
+    background-color: rgb(161, 215, 218);
+}
+
+section img, article img {
+    width: 150px; 
+    height: 100px;
+}
+
+footer {
+    background-color: rgb(176, 196, 247);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

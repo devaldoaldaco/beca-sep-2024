@@ -1,0 +1,68 @@
+/* Selector universal */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Selector de clase .box */
+.box {
+    border: 2px solid #f2b900; 
+    padding: 10px;
+    margin: 10px;
+    background-color: #fdde77; 
+    color: inherit; /* Hereda el color del texto del contenedor padre */
+    position: relative; 
+}
+
+/* Selector de id #unique */
+#unique {
+    background-color: antiquewhite;
+    color: #e5634d; 
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Selector de atributo a[title] */
+a[title] {
+    color: #8d0bd9;
+    text-decoration: none;
+}
+
+/* Selector de pseudo-clase */
+p:first-child {
+    font-weight: bold; 
+}
+
+/* Selector de pseudo-elemento */
+p::first-line {
+    color: #f28e1c; 
+}
+
+/* Combinador descendente */
+article p {
+    color: #0fa83d; 
+}
+
+/* Combinador de hijos */
+article > p {
+    font-style: italic; /* Estilo en cursiva para los parrafos hijos directos de article */
+}
+
+/* Combinador de hermanos adyacentes */
+h2 + p {
+    color: #a93939; /* Color para el párrafo que sigue inmediatamente a un h2 */
+}
+
+/* Combinador de hermanos generales */
+h2 ~ p {
+    background-color: #e0e0e0;
+}
+
+
+.pug-image {
+    display: block;
+    width: 10%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10%; 
+}
