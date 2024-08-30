@@ -1,0 +1,42 @@
+#p{
+    color: chocolate ;
+}
+.color_class{
+    color: red !important;
+}
+p[active]{
+    color:darkslategray;
+} 
+
+
+
+ /* Regla de estilo para todos los elementos <h1> */
+ h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+/* Regla de estilo para todos los elementos <h2> con la clase "highlight" */
+.highlight {
+    color: green;
+    font-size: 20px;
+}
+
+/* Regla de estilo para todos los elementos <p> con atributo "active" */
+p[active] {
+    color: purple;
+    font-size: 22px;
+}
+
+/* Regla de estilo para los elementos <h1> con clase "highlight" */
+h1.highlight {
+    color: orange;
+    font-size: 26px;
+}
+
+/* Regla de estilo para los elementos <h2> con atributo "active" */
+h2[active] {
+    color: red;
+    font-size: 28px;
+}
+
