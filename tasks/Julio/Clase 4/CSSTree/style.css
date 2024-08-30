@@ -1,0 +1,52 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:medium;
+    text-align: center;
+}
+
+.box{
+    background-color: #2980B9;
+    color:white;
+    padding: 1em;
+}
+
+#unique{
+    font-size: 2rem;
+}
+
+a[title]{
+    color: #2980B9;
+    text-decoration: none;
+}
+
+p:first-child{
+    color: #A93226;
+}
+
+p::first-line{
+    color:green;
+}
+
+article p{
+    font-style: italic;
+}
+
+article > p{ 
+    font-style: initial;
+}
+
+h1+p{
+    padding: 0.5rem;
+}
+h1~p{
+    background-color: white;
+}
+
+main{
+    background-color: #F6DDCC;
+}
+
+article{
+    background-color: #FCF3CF;
+}
+

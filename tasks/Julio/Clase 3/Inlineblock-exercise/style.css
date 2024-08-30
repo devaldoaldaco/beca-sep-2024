@@ -1,0 +1,38 @@
+
+/*las etiquetas semánticas por default tienen display block*/
+header{
+    height: 20vh;
+    background-color: #900C3F;
+    margin-bottom: 7rem;
+}
+
+section{
+    display: inline; 
+    background-color: blue;
+    padding: 6rem;
+    margin-right: 1rem;
+}
+
+main{
+    display: inline; 
+    background-color: #EDBB99;
+    padding:6rem;
+}
+
+article{
+    display: inline; 
+    background-color: rgb(112, 193, 148);
+}
+
+
+article span{
+    margin-top: 7rem;
+}
+
+footer{
+    height: 20vh;
+    background-color: #566573;
+    margin-top: 7rem;
+}
+
+
