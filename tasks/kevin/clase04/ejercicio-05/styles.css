@@ -1,0 +1,59 @@
+/*Selector universal*/
+* {
+    color:chocolate;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+/*Selector de clase*/
+.box {
+    border: 2px solid red;
+    margin: 10px;
+}
+
+/*Selector de ID*/
+#unique {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/*Selector de atributo*/
+a[title] {
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+/*Selector Pseudo-clase*/
+p:first-child {
+    color: violet;
+    font-style: oblique;
+}
+
+/*Selector Pseudo-elemento*/
+p::first-line {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Combinador descendente*/
+article p {
+    margin: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*Combinador de hijos*/
+article > p {
+    color: darkblue;
+}
+
+/*Combinador de hermanos adyacentes*/
+h1 + p {
+    font-size: 20px;
+    color: gray;
+}
+
+/*Combinador de hermanos generales*/
+h1 ~ p {
+    background-color: yellow;
+    padding: 5px;
+}
