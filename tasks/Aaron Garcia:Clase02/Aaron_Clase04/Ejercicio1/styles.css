@@ -1,0 +1,52 @@
+main{
+    width: 40%;
+    margin: 20px 20px;
+    max-width: 1000px;
+}
+
+article {
+    width: 80%;
+background-color:rgb(57, 5, 114);
+color: white;
+}
+
+.encabezado{
+    color: rgb(137, 33, 223);
+}
+
+.redaccion{
+    font-size: 0.8rem;
+}
+
+article{
+    padding: 50px;
+    float: left;
+}
+
+p.lista {
+    float: left;
+    margin: 0px 0px;
+}
+
+.complemento{
+
+    font-size: 10px;
+}
+
+.titulo{
+    font-size: 2rem;
+}
+
+#xd{
+    margin: 0px 50px;
+}
+
+aside{
+    background-image: url(imagen.jpeg);
+ 
+    width: 45%;
+    height: 368px;
+    float: left;
+    max-width: 1000px;
+}
+

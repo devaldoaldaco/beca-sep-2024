@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    margin: 20px 20px;
+}
+
+.read {
+    line-height: 20px;
+    width: 100%;
+    font-size: 1rem;
+    position: relative;
+    top: 30px;
+    opacity: 0.7;
+}
+
+.titulo{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.izquierda,.centro,.derecha{
+    padding: 50px;
+    color: white;
+  
+}
+
+.izquierda{
+background-color: orange;
+
+}
+
+.centro{
+background-color: rgb(14, 152, 152);
+
+}
+
+.derecha{
+background-color: rgb(3, 101, 69);
+
+}
+
+article{
+    width: 23%;
+    height: 300px;
+    float: left;
+}
+
+button{
+    width: 60%;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    top: 100px;
+    font-size: 0.8rem;
+}
+.B1{
+    color: orange;
+}
+
+.B2{
+    color: rgb(14, 152, 152)
+}
+
+.B3{
+    color: rgb(3, 101, 69);
+}
