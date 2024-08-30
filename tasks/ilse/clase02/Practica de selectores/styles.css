@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mar {
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+}
+
+#titulo-principal {
+    text-align: center;
+    font-size: 2.5em;
+    color: green;
+
+}
+
+a[target="-blank"] {
+    color: blue;
+    text-decoration: none;
+
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+p::first-line {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+section> h2 {
+    color:green;
+}
+
+h2 + p {
+    margin-top: 10px;
+
+}
+
+h2 ~ p {
+    color: green;
+} 
