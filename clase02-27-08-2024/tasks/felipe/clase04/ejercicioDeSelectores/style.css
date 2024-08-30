@@ -1,0 +1,43 @@
+*{
+  color:brown;
+}
+
+#unique{
+  background-color: yellow;
+}
+.box{
+  background-color:beige
+}
+
+a[href="facebook.com"]{
+  color:blue;
+  background-color: green;
+  
+}
+
+/*Esto es una pseudoclase*/
+
+a:hover{ 
+  background-color: aqua;
+}
+
+p::first-line{
+  background-color: orange;
+}
+
+p span{
+  background-color: red;
+  color: black;
+}
+
+ul > li {
+  background-color: greenyellow;
+}
+
+h1 + p {
+  background-color: aquamarine;
+}
+
+h1 ~ p{
+  text-transform: uppercase;
+}
