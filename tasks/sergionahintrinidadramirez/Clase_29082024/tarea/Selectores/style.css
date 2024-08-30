@@ -1,0 +1,64 @@
+/* Selector Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Selector de Clase */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+    border: 2px solid #000;
+}
+
+/* Selector de ID */
+#unique {
+    color: red;
+    font-weight: bold;
+}
+
+/* Selector de Atributo */
+a[title] {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Selector de Pseudo-clase */
+p:first-child {
+    font-weight: bold;
+    color: blue;
+}
+
+/* Selector de Pseudo-elemento */
+p::first-line {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* Selector Combinador Descendente */
+article p {
+    color: blue;
+    margin-left: 20px;
+}
+
+/* Selector Combinador de Hijos */
+article > p {
+    color: purple;
+    margin-left: 40px;
+}
+
+/* Selector Combinador de Hermanos Adyacentes */
+h1 + p {
+    color: orange;
+    margin-top: 10px;
+}
+
+/* Selector Combinador de Hermanos Generales */
+h1 ~ p {
+    color: gray;
+    margin-top: 5px;
+}
