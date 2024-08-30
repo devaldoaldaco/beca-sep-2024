@@ -1,9 +1,8 @@
-p[data-name="texto"] {
-    color: black;
-}
-
 .main-heading {
     color: red;
 }
 
+[data-name="texto"] {
+    color: black;
+}
 

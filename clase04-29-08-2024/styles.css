@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+
+    background-color: blueviolet;
+}
+
+p {
+    background-color: white;
+
+    font-size: 3rem;
+}
+
+h1 {
+    border: 1px solid black; /* short hand */
+}
+
+.box {
+    margin: 1rem;
+}
+
+#mainContent {
+    background-color: black!important;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+span[user~="aldo"] {
+    background-color: aqua;
+}
+
+[type="warning"] {
+    background-color: orange;
+}
+
+[type="success"] {
+    background-color: green;
+}
+
+[hidden] {/*atributo boolean*/
+    display: none;
+}
+
+button:hover {
+    background-color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+button:active {
+    background-color: blue;
+}
+
+:visited {
+
+}
