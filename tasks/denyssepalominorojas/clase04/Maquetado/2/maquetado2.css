@@ -1,0 +1,34 @@
+main{
+    
+    font-family:'Arial Narrow';
+}
+
+article{
+    color: white;
+    width: 15%;
+    height: 300px;
+    float: left;
+}
+
+.sedans {
+    padding: 0 30px;
+    margin: 0;
+    background-color: #e28525;
+}
+
+.suvs{
+    padding: 0 30px;
+    background-color: #006A74;
+}
+
+.luxury{
+    padding: 0 30px;
+    background-color: #00413F;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+

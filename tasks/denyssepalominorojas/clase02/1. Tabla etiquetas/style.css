@@ -1,0 +1,14 @@
+.tabla{
+    table-layout: fixed;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+.tabla thead {
+    color: rebeccapurple;
+}
+
+.tabla th,
+.tabla td{
+   padding: 12px 15px;
+}
