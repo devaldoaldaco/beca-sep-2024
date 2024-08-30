@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad en CSS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        
+        <p style="color: blue;">Este parrafo tiene la especificidad en linea y por lo tanto se tiene que pintar de azul</p>
+        
+        <p id="p">Este parrafo tine la especificidad del id por lo cual se tiene que pintar de rojo</p>
+        <p active >Este parrafo tiene la especificidad del atributo por lo cual se tiene que pintar de cafe</p>
+        <p class="parrafo">Este parrafo tiene la especificidad de la clase por lo cual se tiene que pintar de verde</p>
+        <p>Este parrafo tiene la especificidad de un elemento por lo cual se tiene que pintar de rosa</p>
+        <p id="block">Este parrafo tiene la regla de display block (ocupa todo el espacio del ancho posible de la etiqueta padre, en este caso "main")</p>
+        <p id="inline">Este parrafo tiene la regla de display inline (ocupa solo el espacio definido por su contenido de la etiqueta "p")</p>
+        <img src="img.png" alt="">
+    </main>
+
+    <footer>
+        <strong style="color: white;">Cabe resaltar que en el archivo Styles, viene la regla de p{} de color rosa, por lo cual en cada parrafo se puede observar como se aplican las reglas de especificidad</strong>
+    </footer>
+    
+
+</body>
+</html>
