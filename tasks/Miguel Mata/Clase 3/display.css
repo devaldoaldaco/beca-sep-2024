@@ -1,0 +1,46 @@
+*{
+    border: 1px solid black;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    width:auto;
+    height:100px;
+    background-color: #7c7c7c;
+    display: block;
+}
+
+footer{
+    background-color: #d4cddb;
+    height: 100px;
+}
+#izquierda{
+    display:inline-block;
+    vertical-align:top;
+    width: 25%;
+}
+#derecha{
+    display: inline-block;
+    background-color: yellow;
+    margin-left: 15px;
+    height: 625px;
+    width: 73%;
+}
+.opcion1{
+    height: 400px;
+    background-color: #7594b9;
+}
+.opcion2{
+    margin-top: 20px;
+    height: 200px;
+    background-color: #fb8383;
+}
+·
+#opcion3{
+    width: 700px;;
+}
+article{
+    padding: 1%;
+}

@@ -1,0 +1,27 @@
+.texto{
+    color: blue;
+}
+/*#texto{
+    color: red ;
+}*/
+h1{
+    color: green;
+}
+h1[name="atributo"] {
+ color: blueviolet;
+}
+/*
+para saber cual es la especifidad que gana a la hora de establecer el estilo del elemento se debe
+hacer un calculo con la escificidad de cada forma en la cual se esta asignando el estilo
+por ejemplo:
+especificidad de cada declaracion
+id= 0,1,0,0
+clase=0,0,1,0
+elemento=0,0,0,1
+pseudocodigo=0,0,1,0
+!important=1,0,0,0
+
+siguiendo esto se suman las especificidad del elemento para saber cual estilo aplicar
+
+img:hover-> 0,0,0,1 + 0,0,1,0 = 0,0,1,1
+*/
