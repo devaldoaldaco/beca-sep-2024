@@ -1,0 +1,22 @@
+
+div{
+    width: 10vw;
+    height:10vh;
+    background-color: pink;
+    position: relative;
+}
+
+
+#box2{
+   top: 80vh;
+}
+
+#box3{
+    top:70vh;
+    left: 90vw;
+}
+
+#box4{
+    top:-30vh;
+    left: 90vw;
+}
