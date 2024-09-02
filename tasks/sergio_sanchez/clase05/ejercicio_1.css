@@ -1,0 +1,30 @@
+* {
+    height: 500px;
+    margin: 0%;
+    padding: 0%;
+}
+div {
+    background-color: blueviolet;
+    width: 10%;
+    height: 10%;
+}
+.sec1 {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+}
+.sec2 {
+    position: relative;
+    top: 80%;
+    left: 0%;
+}
+.sec3 {
+    position: relative;
+    top: 70%;
+    left: 90%;
+}
+.sec4 {
+    position: relative;
+    top: -30%;
+    left: 90%;
+}

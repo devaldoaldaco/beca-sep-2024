@@ -1,0 +1,57 @@
+main{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+}
+.box{
+    background-color: #0B192C;
+    padding: 5%;
+}
+article{
+    background-color: #12283F;
+    border-radius: 10px;
+    padding: 5%;
+}
+article > h1{
+    color: white;
+    font-size: 29px;
+}
+article > h2{
+    color: #2B4062;
+    font-size: 20px;
+}
+.box_eth{
+    display: flex;
+    justify-content: space-between;
+}
+.box_eth > .eth{
+    color: #3395A4;
+}
+.box_eth > .day{
+    color: #8CA9D0;
+}
+.box_eth > h1 > span{
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+article > hr{
+    border-color: #2B4062;
+}
+.box_creation{
+    display: flex;
+}
+.creation_img{
+    position: relative;
+    top: 10px;
+    margin-right: 2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: white 2px solid;
+}
+.box_creation > h1{
+    color: #A1AEC1;
+}
+.box_creation > h1 > span{
+    color: #516482;
+}
