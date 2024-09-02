@@ -1,0 +1,19 @@
+
+
+section{
+    background-color: blueviolet;
+}
+
+section > div {
+    background-color: white;
+    margin: 1rem;
+}
+
+section div {
+    background-color: red;
+}
+
+h1 + p {
+    background-color: aqua;
+}
+
