@@ -1,0 +1,71 @@
+body{
+    background-color: #0C192C;
+}
+main{
+    border-radius: 20px;
+    background-color: #172741;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-top: 3rem;
+    height: 700px;
+    width: 450px;
+    
+}
+#inrainbows{
+    padding-left: 75px;
+    padding-top: 2rem;
+    width: 300px;
+    height: 300px;
+    
+}
+h1{
+    color: #DCEAF4;
+    font-size: 30px;
+}
+#songInfo{
+    margin: 75px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#songInfo > p{
+    color: #465C7A;
+
+}
+li{
+    display: inline;
+}
+li:first-child{
+    color: #4FA9B8;
+    margin-right: 28%;
+}
+ul{
+    padding: 0%;
+    padding-top: 20px;
+}
+ul > :nth-child(2){
+    color: #9dabbe;
+}
+.fontSize{
+    font-size: 20px;
+}
+
+#artist{
+    border-top: 1px solid #465C7A;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+#radiohead{
+    width: 25px;
+    display: inline;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+#data{
+    display: inline;
+    color: #DCEAF4;
+}
+span{
+    color: #465C7A;
+
+}
