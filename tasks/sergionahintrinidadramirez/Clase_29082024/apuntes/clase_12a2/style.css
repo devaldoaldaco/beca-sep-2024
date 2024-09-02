@@ -1,0 +1,15 @@
+div {
+    margin: 2rem;
+    background-color: blueviolet;
+}
+
+p{
+    background-color: white;
+    margin: inherit;
+    font-size: 3rem;
+}
+h1{
+    padding: 1rem;
+    border: 1px solid black; /*Short hand por tener 3 propiedades*/
+    
+}

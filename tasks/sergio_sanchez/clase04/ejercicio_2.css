@@ -1,0 +1,54 @@
+* {
+    margin: 0%;
+}
+div {
+    margin: 2%;
+    background-color: #1B1938;
+    display: flex;
+}
+.sec1{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 50%;
+    padding: 3%;
+    float: left;
+}
+.sec2{
+    float: right;
+    width: 50%;
+}
+.sec1 p:first-line{
+    margin-top: 10%;
+}
+p {
+    color: #48465E;
+}
+.sec1_sec2 {
+    display: inline;
+    margin-top: 10%;
+}
+h1{
+    color: white;
+    font-size:xx-large;
+}
+h1 > span{
+    color: #885AB3;
+}
+.p1{
+    padding-top: 5%;
+}
+.p2 {
+    padding-top: 2%;
+}
+article{
+    margin-top: 5%;
+    float: left;
+    margin-right: 5%;
+}
+article h2, article h3{
+    color: white;
+}
+.sec1_sec2 h4{
+    margin-top: 5%;
+    color: white;
+}

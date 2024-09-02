@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    text-align: justify; 
+    color: white;
+}
+#naranja{
+    width: 20%;
+    height: auto;
+    background-color: orange;
+    padding: 2% 5% 5%;
+}
+#azul{
+    width: 20%;
+    height: auto;
+    background-color: #4aaada;
+    padding: 2% 5% 5%;
+}
+#verde{
+    width: 20%;
+    height: auto;
+    background-color: #0f6055;
+    padding: 2% 5% 5%;
+}
+h1{
+    font-size: xx-large;
+}
+p{
+    margin-top: 10%;
+    font-size: x-large;
+    margin-bottom: 25%;
+}
+.button{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    width: 40%;
+}

@@ -1,0 +1,34 @@
+*{
+    background-color: grey;
+}
+.box{
+    color: green;
+}
+#unique{
+    color: blue;
+}
+a[title]{
+    color: red;
+}
+a:first-child{
+    display: block;
+    color: purple;
+}
+p::first-line{
+    color: pink;
+    
+
+}
+article > h3{
+    font-size: 2rem;
+    color: yellowgreen;
+}
+
+h4 + h3{
+    color: aquamarine;
+}
+
+span ~ h6 {
+    color: chocolate;
+    font-size: 1rem;
+}

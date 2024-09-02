@@ -1,0 +1,50 @@
+header{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+header div{
+    margin: 2%;
+}
+header section{
+    background-color: #0091ff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10%;
+}
+main{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-left: 10%;
+}
+main > div{
+    background-color: #31485A;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 2%;
+}
+footer{
+    padding: 5%;
+}
+footer > div{
+    background-color: #252525;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 50px;
+}
+.box5, .box6, .box7, .box8{
+    bottom: 800px;
+    left: 200px;
+}
+.box9, .box10, .box11, .box12{
+    bottom: 1600px;
+    left: 400px;
+}
+.box13, .box14, .box15, .box16{
+    bottom: 2400px;
+    left: 600px;
+}

@@ -1,0 +1,29 @@
+div{
+    width:200px;
+    height:200px;
+    text-align: center;
+}
+#caja1{
+    background-color: yellow;
+    top: 500px
+}
+
+#caja2{
+    position: relative;
+    top: 400px;
+    background-color: aqua;
+}
+
+#caja3{
+    position: relative;
+    top: 200px;
+    left: 1220px;
+    background-color: green;
+}
+
+#caja4{
+    position: relative;
+    left: 1220px;
+    top: -600px;
+    background-color: red;
+}

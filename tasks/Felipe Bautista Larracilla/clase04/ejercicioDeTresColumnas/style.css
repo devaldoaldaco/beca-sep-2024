@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.informacion{
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  color:#ffff;
+  height: 100vh;
+  font-family: "PT Sans";
+}
+.informacion-primera{
+  background-color: #e28525;
+  width: 33%; 
+}
+.informacion-primera input{
+  color:#e28525;
+}
+.informacion-segunda{
+  background-color: #016974;
+  width: 33%;
+}
+.informacion-segunda input{
+  color: #016974;
+}
+.informacion-tercera{
+  background-color: #00403f;
+  width: 33%;
+}
+.informacion-tercera input{
+  color:  #00403f;
+}
+.contenido{
+  padding: 20px 40px;
+}
+.contenido h2{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.contenido p{
+  line-height: 25px;
+}
+.contenido input{
+  padding: 20px 60px;
+  margin-top: 300px;
+  border-radius: 30px;
+  background-color: #ffff;
+  border: none;
+  font-weight: bold;
+  
+}
+

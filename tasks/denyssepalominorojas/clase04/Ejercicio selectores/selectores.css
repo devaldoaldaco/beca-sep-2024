@@ -1,0 +1,54 @@
+*{
+
+  margin: 0;
+  padding: 0;
+}
+
+.box{
+    color: brown;
+}
+
+#unique{
+   color: rgb(0, 0, 0);
+   font-size: 4rem;
+}
+
+a[title="Ir a Twitch"]{
+    color: purple;
+    font-size: 3rem;
+}
+
+p:first-child{
+    color: black;
+}
+
+p::first-line{
+    color: blue;
+}
+
+article p{
+    font-size: 3rem;
+    color: aqua;
+}
+
+article > p{
+  font-size: 3rem;
+  background-color: chocolate;
+}
+
+header h1 + p.box{
+   font-size: 3rem;
+   background-color: blue;
+}
+
+header h1 ~ p.box{
+    font-size: 3rem;
+    background-color: cadetblue;
+}
+
+
+
+
+
+
+

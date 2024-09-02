@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h2 class="box">Este parrafo contiene un selector de clase</h2>
+    <h1 id="unique">Este titulo tiene un selector de ID</h1>
+    <a title="Ejemplo" href="Youtube.com">Este link a Youtube tiene un selector de atributo</a>
+    <div>
+        <a>Este parrafo es el primer hijo del div por lo cual hereda las propiedades</a>
+        <a>Este parrafo es el segundo hijo del div por lo cual no heredara las propiedades</a>
+    </div>
+    <div >
+        <p>Este parrafo obtendra las propiedades ya que cuenta con el selector de first inline Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias cumque commodi id quam officiis perferendis, voluptatum quidem laboriosam tenetur provident rerum cupiditate exercitationem dignissimos fuga fugiat nemo nisi. Illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero nesciunt adipisci, ipsum sit cumque nihil itaque, ullam optio beatae est iure, quis molestias quasi. Aperiam quo at eveniet id rerum?</p>
+        
+    </div>
+    <article>
+        <h3>Este parrafo esta dentro del elemento article por lo que va a ser hijo directo y se pondran las propiedades</h3>
+        <div>
+            <h3>Este parrafo esta dentro de un div adentro de un article por lo que no es hijo directo</h3>
+        </div>
+    </article>
+
+    <div>
+        <h4>Este es un H4</h4>
+        <h3>Este es un parrafo y esta escrito despues de un h4 por lo que se le aplicaran las propiedades</h3>
+    </div>
+
+    <div>
+        <span>Este span es el hermano de parrafo de abajo </span>
+        <h6>Este h5 es el hermano del h4 por lo que se le aplcaran las propiedades</h6>
+        <div>
+            <h6>Este es un h4 adentro de un div por lo que no es hermano del h5 de arriba</h6>
+        
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

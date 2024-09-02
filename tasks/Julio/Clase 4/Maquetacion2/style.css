@@ -1,0 +1,50 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+main{
+    display:flex;
+}
+
+section{
+    width:33%;
+    height: 50vh;
+    padding: 2em;
+}
+
+section h1{
+    font-size: 2rem;
+}
+
+section button{
+    padding:1em;
+    border-radius: 1em;
+    border: white;
+    font-size: 1rem;
+    margin-top:2em;
+}
+
+#card1{
+    background-color: #F5B041;
+
+    button{
+        color:#F5B041;
+    }
+}
+
+#card2{
+    background-color: #2980B9;
+
+    button{
+        color: #2980B9;
+    }
+}
+
+#card3{
+    background-color: #0B5345;
+
+    button{
+        color: #0B5345;
+    }
+}

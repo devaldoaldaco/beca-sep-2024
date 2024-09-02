@@ -1,0 +1,12 @@
+article{
+    display: block;
+}
+
+section{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(48, 72, 91) ;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}

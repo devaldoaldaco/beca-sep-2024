@@ -1,0 +1,38 @@
+*{
+    border: 1px solid black;
+}
+.secciones{
+    background-color: aqua;
+    margin: 2rem;
+}
+#div2{
+    margin: 2rem;
+    height: auto;
+    background-color: rgb(241, 180, 58);
+}
+[name="div1"]{
+    background-color: red;
+    margin: 2rem;
+    height: auto;
+}
+[name="div1"]:hover{
+    background-color: green;
+}
+#div2::before{
+    content: "Texto añadido con Pseudo Elemento";
+    color: white;
+    font-size: 2rem;
+}
+#div2 h1{
+    color:darkcyan;
+}
+#div2 > h3{
+    background-color: brown;
+}
+h3+p{
+    color: white;
+    background-color: pink;
+}
+h4~p{
+    color: green;
+}

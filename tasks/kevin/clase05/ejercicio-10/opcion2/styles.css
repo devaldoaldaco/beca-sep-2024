@@ -1,0 +1,11 @@
+article{
+    display: flex;
+}
+
+section{
+    border-radius: 50%;
+    background-color: rgb(48, 72, 91) ;
+    height: 100px;
+    width: 100px;
+    margin:10px
+}

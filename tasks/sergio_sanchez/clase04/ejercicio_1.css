@@ -1,0 +1,52 @@
+/* Selector universal */
+* {
+    margin: 1%;
+}
+/* Selector Clase */
+.box {
+    background-color: brown;
+    height: 50px;
+    display: block;
+}
+/* Selector de ID */
+#unique {
+    background-color: black;
+    height: 50px;
+    display: block;
+}
+/* Selector de atributo */
+a[title] {
+    background-color: yellow;
+    height: 50px;
+}
+/* Selector de Pseudo-clase */
+div p:first-child{
+    background-color: aliceblue;
+    color: red;
+}
+/* Selector de Pseudo-elemento */
+section p::first-line {
+    background-color: black;
+    color: red;
+}
+/* Selector de descendente */
+article p {
+    background-color: aqua;
+    color: black;
+}
+/* Selector de hijos */
+span{
+    color: initial;
+}
+aside > span {
+    color: rebeccapurple;
+    border: 1px solid red;
+}
+/* Selector de hermanos adyacentes */
+h1 + p {
+    color: coral;
+}
+/* Selector de hermanos generales */
+h2 ~ p {
+    color: rebeccapurple;
+}

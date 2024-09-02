@@ -1,0 +1,13 @@
+p {
+    margin-top: inherit;
+    color: bisque;
+}
+
+h6 {
+    color: bisque; 
+}
+
+h1{
+    padding: 1rem;
+    border: 1px solid black; /* Short hand*/
+}

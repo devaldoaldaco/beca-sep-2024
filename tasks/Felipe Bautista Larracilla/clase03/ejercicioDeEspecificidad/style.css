@@ -1,0 +1,30 @@
+/*
+span{
+    background-color: blue;
+}*/
+
+
+/* Al aplicar la espcificidad en estas condiciones si se aplica el criterio
+cascada para definir cual caracteristica se aplica al presentar el mismo nivel
+ de especificidad.*/
+
+
+ [style="color:red"]{
+  background-color: black;
+  }
+
+.titulo{
+  background-color:  aqua;
+  }
+
+/* En este ejemplo al agregar la etiqueta al argumento, expresamos un mayor nivel
+de especificidad por ello se tenia el conflicto de que no se respetaba el orden 
+de cascada
+span[style="color:red"]{
+  background-color: black;
+   }*/
+
+/*
+#ejemplo{
+  background-color: yellow;
+}*/

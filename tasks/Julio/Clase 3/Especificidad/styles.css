@@ -1,0 +1,25 @@
+header[onmouseover]{
+    color: blue;
+}
+
+.bg-text{
+    color: red;
+}
+
+/*header---> 1 y atributo onmouseover--->10 por lo tanto 10+1 = 11
+ .bg-text---->10 por lo tanto su ponderación es 10
+
+ Conclusión: la etiqueta mas el atributo es más específico que la clase, por eso sus estilos permanecen
+
+*/
+
+
+
+/* Especificidad : 
+
+estilos en linea: 1000
+id: 100
+clases, atributos: 10
+etiquetas, pseudoclases: 1
+
+*/
