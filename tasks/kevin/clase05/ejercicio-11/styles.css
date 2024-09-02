@@ -2,29 +2,39 @@
     margin: 0;
 }
 
+#menuAndSection{
+    background: linear-gradient(to left, #D81172 0%, #D81172 30%, 
+    #681052 70%, #380d45 100%);
+}
+
 header{
     padding: 20px;
-    background-color: rgb(200, 16, 109);
 }
 
 [data-name="menu"]{
     color: white;
     display: inline-block;
+    font-family: 'Vibur', cursive;
+    font-size: 25px;
 }
 
 [data-name="menu-buttons"]{
-    background-color: rgb(200, 16, 109);
-    border-color: whitesmoke;
+    background-color: transparent;
+    border-color: transparent;
     margin-left: 40px;
     color: white;
     padding: 15px;
+    font-family: Arial;
+    font-size: 15px;
 }
 
 #returnHome{
     position: fixed;
-    right: 100px;
-    bottom: 580px;
-    background-color: black;
+    right: 1230px;
+    bottom: 160px;
+    background: linear-gradient(to left, #D81172 0%, #D81172 30%, 
+    #681052 70%, #380d45 100%);
+    border-color: rgb(253, 11, 125);
     color: white;
 }
 
@@ -32,7 +42,6 @@ header{
 
 [data-name="cupcake-section"]{
     display: flex;
-    background-color: rgb(200, 16, 109);
     margin-bottom: 20px;
 }
 
@@ -248,7 +257,8 @@ header{
 }
 
 [data-name="start-section"]{
-    background-color: rgb(155, 33, 162);   
+    background: linear-gradient(to left, #D81172 0%, #D81172 30%, 
+    #681052 70%, #380d45 100%);  
     padding: 100px;
     margin-top: 20px;
     text-align: center;
@@ -314,4 +324,3 @@ header{
     padding: 16px;
     font-size: 12px;
 }
-
