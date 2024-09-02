@@ -1,0 +1,27 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 50vw; 
+    height: 90vh;
+    background-color:white;
+    margin: 20px;
+    box-sizing: border-box; 
+     
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color:#31485a;
+    margin-top: 20px;
+    margin-left: 20px;
+}
