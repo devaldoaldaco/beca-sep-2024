@@ -1,0 +1,311 @@
+/* Reset y estilos básicos */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Estilos comunes para las secciones */
+.page-one, .page-two, .page-three, .page-four {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-one {
+    background: rgb(199,17,96);
+    background: linear-gradient(90deg, rgba(199,17,96,1) 0%, rgba(71,11,60,1) 100%);
+}
+
+/* Estilos para la navegación */
+nav ul {
+    margin-top: 50px;
+    justify-content: right;
+    margin-right: 90px;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.manuscrito {
+    display: inline;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    margin-right: 650px;
+    font-size: 50px;
+    margin-top: -30px;
+}
+
+.container-uno {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 120px;
+    color: white;
+}
+
+.container-principal {
+    gap: 200px;
+    display: flex;
+}
+
+.card-uno {
+    display: flex;
+    flex-direction: column;
+    margin-top: -90px;
+    width: 300px;
+    height: 440px;
+    padding: 25px;
+    justify-content: center;
+    background-color: #69357f;
+    box-sizing: border-box;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: rotate(45deg) translateX(180px);
+    transform: rotate3d(45, 1, 1, 1);
+}
+
+.btn-card button {
+    font-size: 20px;
+    background-color: #472dcc;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 35px;
+    margin-top: 190px;
+}
+
+.perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.btn {
+    font-size: 30px;
+    border: none;
+    color: white;
+    background-color: #fc0b7d;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Estilos para maquetación 2 */
+.page-two {
+    justify-content: center;
+    background-color: white;
+}
+
+.datos {
+    justify-content: center;
+    display: flex;
+    gap: 200px;
+    margin-top: 90px;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item h1 {
+    font-size: 50px;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+
+.item p {
+    margin-top: 0;
+}
+
+.page-two img {
+    width: 30%;
+    height: auto;
+}
+
+.page-two section {
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.page-two article p {
+    line-height: 1.5;
+    color: #525252;
+}
+
+.page-two article h1 {
+    margin-top: 0px;
+    font-size: 35px;
+}
+
+/* Estilos para maquetación 3 */
+.page-three {
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+
+.page-three section {
+    gap: 40px;
+    display: flex;
+}
+
+.page-three article {
+    margin-top: 70px;
+    margin-right: 110px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 230px;
+    width: 300px;
+    height: 440px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 150%;
+    height: auto;
+    align-self: center;
+}
+
+.page-three article h1 {
+    font-size: 50px;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+
+.page-three article p {
+    line-height: 1.5;
+}
+
+.rating-time {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#rating, #time {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#rating img, #time img {
+    width: 15px;
+    height: auto;
+}
+
+#rating p, #time p {
+    margin: 0;
+    line-height: 1;
+}
+
+.p-rating-time {
+    margin-top: 9px;
+    display: flex;
+    gap: 35px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin: 0;
+    line-height: 1;
+}
+
+.ingredients {
+    display: flex;
+    gap: 10px;
+}
+
+.ingredients img {
+    width: 56px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.page-three .card {
+    margin-bottom: 20px;
+}
+
+.notifications {
+    text-align: center;
+    justify-content: center;
+}
+
+.notifications img {
+    width: 140px;
+    height: auto;
+}
+
+/* Estilos para maquetación 4 */
+.page-four {
+    text-align: center;
+    color: white;
+    background-color: #1b1b1b;
+    padding: 0;
+    position: relative;
+}
+
+.container-four {
+    margin-top: 40px;
+    position: relative;
+}
+
+.page-four .dashboard {
+    display: block;
+    margin: 121px auto 0 auto;
+    width: 670px;
+    height: auto;
+    border-top: 65px solid black;
+    border-right: 65px solid black;
+    border-left: 65px solid black;
+    border-bottom: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 0;
+    position: relative;
+}
+
+.page-four .cilantro {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 240px;
+    align-items: end;
+}
+
+.page-four .muffin {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 940px;
+    align-items: end;
+}
