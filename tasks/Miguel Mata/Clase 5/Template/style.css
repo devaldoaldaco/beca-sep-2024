@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gothic A1', sans-serif;
+}
+.nav-logo{
+    position: absolute;
+    top:4%;
+    left:10%;
+    width: 120px;
+    height: 45px;
+}
+.nav{
+    display: flex;
+    background-color: #cf0063;
+}
+.nav-options{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    left: 60%;
+    top: 5%;
+}
+.nav-options li {
+    display: inline-block;
+    text-align: center;
+}
+.nav-options li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+section:nth-child(2){
+    width:100%;
+    height:auto;
+    background-color: #959595;
+}
+.conteiner{
+    display: flex;
+    padding: 10%;
+}
+#text-content h1{
+    margin: 10px 0px 20px;
+    font-size: 5vw;
+    color: white;
+    line-height: 10vh;
+    font-weight: 700;
+}
+#text-content{
+    padding-top:5vw ;
+    position: relative;
+}
+#text-content h3{
+    font-size: 30px;
+    margin: 10px 0 25px;
+    color: white;
+}
+.button{
+    display: inline-block;
+    margin-right: 0px;
+    padding: 20px 40px;
+    border-radius: 3px;
+    background-color: #fc0a7e;
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #fff;
+    color: #6b6b6b;
+}
+.img-conteiner{
+    width: 40%;
+    height: 40%;
+    margin-top: 2%;
+    transform: rotate(-45deg);
+}
+.second-conteiner{
+    background-color: #000000;
+    text-align: center;
+    padding: 5%;
+    color: white;
+    position: relative;
+}
+.second-conteiner h1{
+    margin-top: 2%;
+    font-size: 34px;
+}
+.second-img-container{
+    width: 500px;
+    height: 300px;
+    margin-top:5%;
+}
+.second-img-container-game{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 33.5%; 
+    left: 37%; 
+    transform: translate(50%, 50%); 
+}
+.third-conteiner{
+    display:flex;
+    align-items: center;
+    text-align: justify;
+}
+.third-conteiner-text{
+    padding: 10%;
+    width: 500px;
+}
+.third-conteiner-text h3{
+    margin-top: 5%;
+    color: rgb(74, 74, 74);
+}
+.four-conteiner{
+    background-color: #000000;
+    display: flex;
+    color:white;
+    padding: 10%;
+    text-align: center;
+    
+}
+.four-conteiner div{
+    display: inline;
+    text-align: center;
+    padding: 2%;
+}
+.four-conteiner div img{
+    width: 100px;
+    height: 100px;
+}
+.four-conteiner div h2{
+    margin-top: 10%;
+}
+.four-conteiner div h4{
+    color: #6b6b6b;
+    margin-top: 5%;
+    padding: 0% 10%;
+}
+.fifth-conteiner{
+    display:block;
+    text-align: center;
+    padding: 15%;
+}
+.fifth-conteiner h1{
+   font-size: 3rem;
+}
+.fifth-conteiner-buttons button{
+    display: inline;
+    background-color: #000000;
+    color: white;
+    padding: 30px;
+    width: 200px;
+    margin: 3% 1%;
+}
+.fifth-conteiner-buttons button:hover{
+    background-color: #6b6b6b;
+}
+footer{
+    background-color: #000000;
+    color: white;
+    
+}
+footer div{
+    text-align: end;
+}
+footer ul{
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+}
+footer li{
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+}
+footer h3{
+    display: inline;
+    padding: 30px;
+    margin-right: 40rem;
+}
