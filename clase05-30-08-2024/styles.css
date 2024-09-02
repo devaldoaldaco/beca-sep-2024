@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+}
+
+section {
+    background-color: blueviolet;
+}
+
+section div {
+    background-color: red;  
+}
+
+section > div {
+  background-color: white;  
+  margin: 1rem;
+}
+
+p {
+    span {
+        background-color: red;
+    }
+}
+
+h1, p > span {
+    background-color: aquamarine;
+}
+
+button {
+    position: fixed;
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+}
+/*SASS anidacion*/

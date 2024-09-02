@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+            height: 100vh;
+        }
+
+        .box {
+            position: relative;
+            background-color: red;
+            color: white;
+            font-size: 2rem;
+            font-weight: 500;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box:nth-child(2) {
+            top: -100px;
+            right: calc(-100% + 100px);
+        }
+
+        .box:nth-child(3) {
+            bottom: calc(-100% + 100px);
+        }
+
+        .box:nth-child(4) {
+            bottom: calc(-100% + 100px);
+            right: calc(-100% + 100px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box">D</div>
+</body>
+</html>
