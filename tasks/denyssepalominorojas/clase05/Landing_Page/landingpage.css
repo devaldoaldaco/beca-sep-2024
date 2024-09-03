@@ -1,0 +1,329 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+font-family: "Merienda", cursive; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*---------------- Estilos primer pantalla ------------------*/
+header{
+    min-height: 100vh;
+    background: linear-gradient(
+        150deg,
+        rgb(169,218,136,1) 14%,
+        rgb(98, 153, 122) 43%,
+        rgb(114,36,61,1) 70%,
+        rgb(59,8,25,1) 100%);
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#nombre{
+    font-family: "Dancing Script", cursive;
+    color: black;
+    font-size: 25px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li{
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.navbar ul li a{
+    color: white;
+}
+
+.navbar ul li a:hover{
+    color: rgba(241, 239, 113, 0.985);
+}
+
+#contenido-header{
+    display: flex;
+    margin-top: 150px;
+}
+
+.texto-header{
+    flex-basis: 50%;
+    padding-left: 120px;
+    text-align: justify;
+}
+
+.texto-header h1{
+    font-size: 100px;
+    line-height: 1;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.texto-header p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 13px 30px;
+    background: linear-gradient(
+        90deg,
+        rgba(169,218,136,1) 0%,
+        rgba(240,255,201,1) 100%
+    );
+    color: black;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+}
+
+.img-header{
+    flex-basis: 40%;
+}
+
+/*---------------- Estilos segunda pantalla ------------------*/
+
+.acerca{
+    min-height: 100vh;
+    padding: 50px 300px;
+    background-color: #72243d;
+}
+
+.numeros{
+    display: flex;
+    gap: 60px;
+    font-size: 2rem;
+    text-align: center;
+    color:  #a9da88;
+    margin-bottom: 100px; 
+}
+
+
+.acerca-contenido{
+    display: flex;
+    gap: 50px;
+    padding-left: 100px 50px;
+}
+
+.texto-acerca{
+    flex-basis: 80%;
+    color: white;
+    text-align: justify;
+}
+
+.u{
+    font-size: 22px;
+    text-transform: uppercase;
+    color:  #a9da88;
+}
+
+h2{
+    font-size: 35px;
+    color: black;
+    margin: 15px 0;
+    line-height: 1;
+}
+
+.img-acerca{
+    flex-basis: 90%;
+}
+
+
+/*----------- Estilos tercer pantalla -----------*/
+.dispositivos{
+    min-height: 100vh;
+    padding: 100px 300px;
+    background-color: #69a770;
+}
+
+.dispositivos-t{
+    display: flex;
+    gap: 50px;
+    padding-left: 100px 50px;
+}
+
+.texto-dispositivos{
+    flex-basis: 200%;
+    color: white;
+    text-align: justify;
+}
+
+.d{
+    font-size: 15px;
+    text-transform: uppercase;
+    color:  #72243d;
+}
+
+h2{
+    text-align: left;
+    font-size: 35px;
+    color: black;
+    margin: 15px 0;
+    line-height: 1;
+}
+
+h4{
+    font-size: 20px;
+    color: #72243d;
+}
+
+.img-p1, .img-p2, .img-p3{
+    height: 50px;
+}
+
+.iconos-dispositivos img{
+    border-radius: 15px;
+}
+
+.plataformas-info{
+    display: flex;
+    gap: 50px;
+    font-size: 16px;
+    padding-left: 100px;
+    text-align: center;
+    color:  #ffffff;
+    padding: 0;
+}
+
+footer{
+    margin-top: 200px;
+}
+
+/*----------------- Estilo cuarta pantalla--------------*/
+
+.imagenes{
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 15px;
+    background-color:#72243d;
+}
+
+.texto-imagenes{
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.i-t{
+    font-size: 25px;
+    color:#a9da88;
+    text-align: center;
+}
+
+#imagenes{
+    position: relative;
+}
+
+.i-img1{
+    position: absolute;
+    height: 570px;
+    width: 100%;
+    max-width: 1440px; 
+    border: 20px solid black;
+}
+
+.i-img2{
+    position: relative;
+    left: 1124px;
+    top: 270px;
+    max-width: 1440px;
+    height: 300px;
+}
+
+.i-img3{
+    position: relative;
+    top: 270px;
+    right: 300px;
+    max-width: 1440px;
+    height: 300px;
+}
+
+/*---------------- Estilos pantalla final---------------*/
+
+#final{
+    height: 300px;
+    width: 100%;
+    color: white;
+    background: linear-gradient(
+        150deg,
+        rgb(169,218,136,1) 14%,
+        rgb(98, 153, 122) 43%,
+        rgb(114,36,61,1) 70%,
+        rgb(59,8,25,1) 100%);
+    padding: 10px 35%;
+}
+
+#final h1{
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#final button, #b-email{
+    background-color: #fc0a7e;
+    color: white;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+#final .transparente{
+    font-size: 15px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#correo{
+    background-color: black;
+    min-height: 100hv;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+.correo{
+    size: 20px;
+    color: gray;
+}
+
+#correo input[type="email"]{
+    padding: 20px 40px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#correo h1{
+    color: white;
+}
+
+
+
+
+
