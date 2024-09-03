@@ -9,7 +9,7 @@ header{
   padding: 25px 50px;
   background:rgb(200, 17, 109);
   background: linear-gradient(90deg, rgba(200,17,109,1)35%,rgba(66,15,74,1)100%);
-  color: #ffff;
+  color: #ffffff;
   height: 100vh; 
 }
 nav{
@@ -27,7 +27,6 @@ nav h2{
   list-style: none;
   display: flex;
   column-gap: 30px;
-
 }
 a{
   text-decoration: none;
