@@ -1,0 +1,14 @@
+
+main{
+    display:grid;
+    height: 98vh;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    align-content: center;
+}
+
+article{
+    height: 21vh;
+    background-color: blue;
+    border-radius: 50%;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* display: block; */
+    position: relative;
+    height: 100vh;
+}
+
+div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(104, 25, 25);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.a{
+    position:relative
+}
+
+.b {
+    position: relative;
+    left: 93%;
+    bottom: 100px;
+}
+
+.c{
+    position: relative;
+    top: 410px;
+}
+
+.d{
+    position: relative;
+    left: 93%;
+    top: 310px;
+}

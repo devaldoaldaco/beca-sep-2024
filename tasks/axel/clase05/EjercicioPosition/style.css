@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+div{
+    background-color: red;
+    width: 14rem;
+    height: 14rem;
+}
+
+
+
+#caja2{
+    position: relative;
+    top: 366px;
+}
+
+#caja3{
+    position: relative;
+    left: 1201px;
+    top: 142px;
+}
+#caja4{
+    position: relative;
+    left: 1201px;
+    top: -672px;
+}
+
