@@ -1,0 +1,25 @@
+div{
+    background-color: rgba(39, 4, 154, 0.501);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+#CirculoCinco,#CirculoSeis,#CirculoSiete,#CirculoOcho{
+    position: relative;
+    left: 200px;
+    bottom: 640px;
+}
+
+#CirculoNueve,#CirculoDiez,#CirculoOnce,#CirculoDoce{
+    position: relative;
+    left: 400px;
+    bottom: 1280px;
+}
+
+#CirculoTrece,#CirculoCatorce,#CirculoQuince,#CirculoDieciseis{
+    position: relative;
+    left: 600px;
+    bottom: 1920px;
+}
