@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    height: 100px;
+}
+
+section {
+    width: 500px;
+    display: grid;
+    gap: 10px; /* Sirve para controlar el espacio entre los elementos de un 
+    contenedor flexible*/
+    grid-template-columns: repeat(4, 4fr); /*Sirve para */
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #30485b;
+    border-radius: 50%;
+}

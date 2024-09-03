@@ -1,0 +1,33 @@
+article{
+    width: 23%;
+    height: 23vh;
+    background-color: #34495E;
+    border-radius: 50%;
+    position:absolute;
+}
+
+/* para seleccionar los rangos; elementos de cada renglon con la misma altura*/
+article:nth-child(n+5):nth-child(-n+8){
+    top: 26%;
+}
+
+article:nth-child(n+9):nth-child(-n+12){
+    top: 51%;
+}
+
+article:nth-child(n+13):nth-child(-n+16){
+    top: 76%;
+}
+
+/*Para seleccionar múltiplos y un elemento en especifico*/
+article:nth-child(4n+2), article:nth-child(2){
+    left:26%;
+}
+
+article:nth-child(4n+3), article:nth-child(3){
+    left:51%;
+}
+
+article:nth-child(4n+4), article:nth-child(4){
+    left:76%;
+}

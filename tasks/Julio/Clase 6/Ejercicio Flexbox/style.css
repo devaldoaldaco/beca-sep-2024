@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(136, 194, 136);
+}
+
+header{
+    height: 20vh;
+    background-color: rgb(152, 210, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blue;
+    gap: 0.5rem;
+}
+
+header>section{
+    height: 90%;
+    width:32%;
+    background-color: rgb(230, 187, 107);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    border: 3px solid orange;
+}
+
+header>section>article{
+    height: 90%;
+    width: 45%;
+    background-color: rgb(204, 145, 145);
+    border: 3px solid red;
+}
+
+main{
+    display:flex;
+    gap:0.5rem;
+}
+
+main>section, main>aside{
+    height: 54vh;
+    width: 50%;
+    background-color: rgb(223, 145, 145);
+    margin-top: 0.5rem;
+    border: 3px solid red;
+}
+
+main>aside>div{
+    height:48%;
+    background-color: rgb(199, 110, 199);
+    border: 3px solid purple;
+}
+
+main>aside>div:nth-child(1){
+    margin-bottom: 0.6rem;
+}
+
+main>aside{
+    background-color: rgb(136, 194, 136);
+    border: 0;
+}
+
+footer{
+    height: 20vh;
+    margin-top: 0.5rem;
+    background-color: rgb(110, 110, 215);
+    border: 3px solid blue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.6rem;
+}
+
+footer>section{
+    height:90%;
+    width:32%;
+    background-color: rgb(153, 176, 61);
+    border: 3px solid green;
+}
+
+footer>div{
+    height:90%;
+    width:16%;
+    background-color: rgb(161, 45, 136);
+    border: 3px solid purple;
+}

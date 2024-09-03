@@ -1,0 +1,12 @@
+
+
+section{
+    display: flex;
+}
+article{
+    width: 25%;
+    height: 20.6vh;
+    background-color: #9FE2BF;
+    margin: 1rem;
+    border-radius: 50%;
+}
