@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: rgb(172, 234, 172);
+    width: 80%;
+    height: 700px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#header-section{
+    display: flex;
+    background-color: rgb(143, 199, 255);
+    border: 5px solid blue;
+    width: 79%;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    padding: 2% 2%; 
+    gap: 2%;
+    justify-content: center;
+}
+#header-section div{
+    display: flex;
+    width: 35%;
+    height: 80px;
+    background-color: rgb(233, 190, 109);
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 1%;
+}
+#header-section div article{
+    width: 40%;
+    height: 60px;
+    background-color: rgb(230, 137, 137);
+    align-items: center;
+    border: 1px solid red;
+}
+#conteiner-section{
+    display: flex;
+    width: 84%;
+    height: 100%;
+    flex-direction: row;
+    padding: 2% 0;
+}
+#conteiner-div{
+    height: 97.5%;
+    width: 50%;
+    background-color: pink;
+    border: 5px solid palevioletred;
+}
+#conteiner-articule{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-content: end;
+    justify-content: end;
+    gap: 5%;
+    
+}
+#conteiner-articule article{
+    margin-left: 2%;
+    height: 100%;
+    width: 96%;
+    background-color: pink;
+    border: 5px solid palevioletred;
+}
+#footer-section{
+    display: flex;
+    background-color: rgb(143, 199, 255);
+    border: 5px solid blue;
+    width: 83%;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#footer-section div{
+    display: flex;
+    width: 50%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+#footer-section div article{
+    width: 60%;
+    height: 60px;
+    background-color: rgb(137, 153, 230);
+    align-items: center;
+    border: 2px solid rgb(0, 60, 255);
+    margin: 2% 1% 2% 2% ;
+}
+#footer-section .footer-articule{
+    width: 40%;
+    background-color:rgb(233, 190, 109);
+    border: 2px solid rgb(255, 132, 0);
+}
+#footer-section #footer-articule-revert{
+    flex-direction: row-reverse ;
+}
