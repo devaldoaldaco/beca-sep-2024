@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+body{
+  padding: 50px;
+}
+
+div{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+input{ 
+  margin-top: 50px;
+  padding: 20px 59px;
+  font-size: 15px;
+  font-weight: bold;
+
+} 
+
+#btn-verde{
+  background-color: green;
+}
+
+#btn-amarillo{
+  background-color: yellow;
+}
