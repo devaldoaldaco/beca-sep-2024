@@ -1,0 +1,352 @@
+
+/*---------------------Estilos generales---------------------*/
+
+*{
+    margin:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#diagonal-gradient{
+    background: linear-gradient(to bottom right, #D31171,#3B0E47 );
+    color: white;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+h2{
+    font-size: 2rem;
+}
+
+h6{
+    color: rgba(15, 15, 15, 0.436);
+}
+
+p{
+    font-weight: lighter;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 5%; 
+    border-color: transparent;
+}
+
+/*------------------Estilos de la primera sección--------------------*/
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+}
+
+nav>h2{
+    font-family:cursive;
+}
+
+nav>ul{
+    display:flex;
+
+}
+
+nav>ul>li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav>ul>li>a, nav>h2>a{
+    text-decoration: none;
+    color:white;
+}
+
+main{
+    width:100%;
+    height:94vh;
+    display:flex;
+}
+
+main>section{
+    width: 50%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>section>div{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    height:auto;
+}
+
+main>section>div>div,p,h1{
+    margin:0.6rem 0rem;
+}
+
+main>section p{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+main>section button{
+    background-color: #FC097D;
+    font-size: 1rem;
+    color: white;
+}
+
+main>section img{
+    width: 70%;
+    height:70%;
+    transform-style:preserve-3d;
+    transform: rotate3d(21,-42,16,65deg);
+    box-shadow: 2rem 2rem 3.5rem 1rem #25092d ;
+}
+
+body>section>h1{
+    font-size: 1.5rem;
+}
+body>section>p{
+    font-size: 0.8rem;
+}
+
+/*---------------Estilos de la segundo sección------------------*/
+
+body>section:nth-child(2), section:nth-child(3){
+    height:100vh;
+    background-color: white;
+}
+
+body>section:nth-child(2)>aside{
+    height: 30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-one{
+    margin: auto 5%;
+}
+
+body>section:nth-child(2)>article{
+    height: 70%;
+    display:flex;
+}
+
+body>section:nth-child(2)>article section,section:nth-child(3)>article section{
+    height: 100%;
+    width:50%;
+    display:flex;
+    align-items: center;
+    background-color: white;
+}
+
+body>section:nth-child(2)>article>section div{
+    margin: 0% 3%;
+}
+
+body>section:nth-child(2)>article>section:nth-child(1){
+    justify-content: flex-end;
+}
+body>section:nth-child(2)>article>section:nth-child(2){
+    justify-content: flex-start;
+}
+
+body>section:nth-child(2)>article>section:nth-child(1) div{
+    width: 50%;
+    height:60%;
+}
+body>section:nth-child(2)>article>section:nth-child(2) div{
+    width: 60%;
+    height:60%;
+}
+
+.section2-two>h6, h2,p{
+    margin: 0.7rem 0rem;
+}
+
+body>section p{
+    color:rgba(0, 0, 0, 0.461);
+}
+
+
+body>section:nth-child(2)>article img{
+    width:100%;
+    height:100%;
+}
+
+/*---------------Estilos de la tercer sección------------------*/
+
+#features>article{
+    display: flex;
+    height: 70vh;
+}
+
+article>section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3-one{
+    width:50%;
+    height:60%;
+}
+
+.section3-one img{
+    width: 100%;
+    height:100%;
+}
+
+body>section:nth-child(3)>aside{
+    height: 25vh;
+    display:flex;
+    justify-content: space-around;
+}
+
+.section3-two{
+    display:flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3-two h1{
+    color: #FC097D;
+}
+/*---------------Estilos de la cuarta sección------------------*/
+
+
+#howToUse{
+    height: 100vh;
+    color:white
+}
+
+#howToUse>article{
+    height: 20%;
+    background-color: rgb(30, 29, 29);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#howToUse>article>div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#howToUse>section{
+    height:80%;
+    background-color: rgb(30, 29, 29);
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#howToUse>section>div{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#howToUse img:nth-child(1), #howToUse img:nth-child(3){
+    height:30%;
+    width:30%;
+}
+
+#howToUse img:nth-child(1){
+    position:relative;
+    left:10%;
+}
+
+#howToUse img:nth-child(3){
+    position:relative;
+    left:-10%;
+}
+
+#howToUse img:nth-child(2){
+    height:90%;
+    width:60%;
+}
+
+/*---------------Estilos de la quinta sección------------------*/
+
+
+#download>article{
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#download>article>div{
+    display: flex;
+    height:50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4-one:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+
+#download>article:nth-child(1){
+    background: linear-gradient(to right, #e90f85,#7227ac );
+}
+
+#download>article:nth-child(2){
+    background-color: rgba(19, 18, 18, 0.973);
+}
+
+.section4-one button, .section4-two button{
+    color: white;
+    background-color: #FC097D;
+}
+
+.section4-one>button:nth-child(2){
+    border-color:white;
+    background-color: transparent;
+}
+
+.section4-one>h2{
+    color:white;
+}
+
+.section4-two>h2,h5{
+    color: white;
+}
+
+.section4-two:nth-child(2)>input,button{
+    height:80%;
+    margin: 3% 3%;
+}
+
+.section4-two:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4-two:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

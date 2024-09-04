@@ -1,0 +1,15 @@
+div{
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  border-radius: 50%;
+}
+
+section{
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  padding: 20px;
+}
