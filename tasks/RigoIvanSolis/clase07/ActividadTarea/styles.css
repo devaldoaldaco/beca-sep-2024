@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.div-container {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+header { 
+    text-align: center;
+    height: 120px;
+    width: 80%;
+    background-color: darkcyan;
+    border: solid 2px;
+    border-radius: 30px;
+}
+
+#button-1 {
+    padding: 10px 20px;
+    color: white;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+#button-2 {
+    padding: 10px 20px;
+    color: white;
+    background-color:green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cuadro {
+   margin-top: 150px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.div-c {
+    width: 19%;
+    height: 30%;
+    background-color: #12263e;
+}
