@@ -10,15 +10,15 @@
 
 <body>
     <header>
-        <h1>BIENVENIDO AL JS</h1>
+        <h1 id="titulo">BIENVENIDO AL JS</h1>
     </header>
 
-    <section>
-        <div>
+    <section class="seccion">
+        <div class="contenedor-externo">
             <p>Este es un párrafo en el contenedor externo.</p>
-            <div>
+            <div class="contenedor-interno">
                 <p>Este es un párrafo en el contenedor interno.</p>
-                <div></div>
+                <div id="cuadrado"></div>
             </div>
         </div>
         <p>Este es un párrafo en la seccion .</p>
@@ -26,10 +26,10 @@
     </section>
 
     <div>
-        <button>Cambiar Estilo</button>
+        <button id="cambiarEstilo">Cambiar Estilo</button>
     </div>
 
-    <div></div>
+    <div id="circulo"></div>
 
     <script src="index.js"></script>
 </body>
