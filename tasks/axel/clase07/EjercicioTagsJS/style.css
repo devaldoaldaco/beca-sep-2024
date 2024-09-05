@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(167, 243, 253);
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+#title{
+    font-size: 30px;
+}
