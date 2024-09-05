@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #001524;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#forms {
+    background-color: #15616d;
+    border-radius: 10px;
+    padding: 2em;
+    width: 70vh;
+    color: #ffecd1;
+    box-shadow: 0 4px 10px rgba(255, 236, 209, .8);
+}
+
+#forms label {
+    color: #ff7d00;
+    font-weight: 500;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 1em;
+}
+
+span {
+    color: tomato;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 2px solid #ffecd1;
+    background-color: transparent;
+    color: #ffecd1;
+    font-size: 20px;
+}
+
+input:focus {
+    background-color: #e3d5ca;
+    color: #001524;
+    border-radius: 10px;
+}
+
+button {
+    padding: 12px;
+    background-color: #ff7d00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #fb5607;
+    box-shadow: 0 4px 10px rgba(120, 41, 15, .8);
+}
+
+label[for="domainName"] {
+    margin-top: 1em;
+    display: block;
+}
