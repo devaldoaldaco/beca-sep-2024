@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Extraer Apellido</title>
 </head>
+
 <body>
-    
+    <h1>Extraer el Apellido de Michaels</h1>
+    <p>Texto de entrada:</p>
+    <textarea id="inputText" rows="5"
+        cols="50">Michael, how are you? - Cool, how is John Williamns and Michael Jordan? I don't know but Michael Johnson is fine. Michael do you still score points with LeBron James, Michael Green AKA Star and Michael Wood?</textarea>
+    <button onclick="getLastNames()">Obtener Apellidos</button>
+    <p>Apellidos: <br><span id="lastNames"></span></p>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
