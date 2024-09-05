@@ -1,0 +1,22 @@
+div{
+    display: flex;
+    background-color: blue;
+    height:20rem;
+    border: 5px solid rgb(14, 4, 122);
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+td{
+    border: 1px solid black;
+}
+button{
+    padding: 2% 5%;
+    background-color: white;
+    border:2px solid gray;
+}
+button:hover{
+    padding: 2% 5%;
+    background-color: gray;
+    border:2px solid black;
+}
