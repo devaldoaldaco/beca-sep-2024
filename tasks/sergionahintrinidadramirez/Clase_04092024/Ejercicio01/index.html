@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Domain Name</title>
 </head>
 <body>
-    
+    <h1>Conoce el nombre del dominio!</h1>
+    <form>
+        <label for="url">Coloca la dirección URL para obtener el nombre del dominio. </label> <br>
+        <input type="url" id="url" placeholder="https://example.com" size="30" required />
+        <button type="button" onclick="getDomainName()">Obten el Dominio</button> <br>
+        <label>Nombre del dominio: <span id="domainName"></span></label>
+    </form>
 </body>
+<script src="index.js"></script>
 </html>
