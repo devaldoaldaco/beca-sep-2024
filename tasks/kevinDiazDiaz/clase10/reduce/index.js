@@ -17,6 +17,6 @@ Array.prototype.reduce = function(callback, valor_actual, indice, arreglo){
 }
 
 const numeros = [1, 2, 3, 4];
-const suma = numeros.reduce((acumulador, num) => acumulador + num, 0);
+const suma = numeros.reduce(function(acumulador, num) {return acumulador + num;}, 0);
 
 console.log(suma); // 10
