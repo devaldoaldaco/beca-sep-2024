@@ -1,6 +1,6 @@
 let explain;
 //explicaciones
-let boolean = {
+let number = {
   constructor: function (){
     explain = `Esta función solo devuelve valores primitivos, si se le declara con new Number() llama a un constructor y cuando es Number() esta siendo llamada una función, por defecto inicia con el valor ${new Number()}`
     return explain;
@@ -49,18 +49,18 @@ let boolean = {
 };
 
 //Inyecta el texto de presentación a un parrafo
-function agregarBoolean() {
+function agregarnumber() {
   let parrafo = document.getElementById("p-constructor");
   let parrafoMetodoInstancia = document.getElementsByClassName("p-instance");
 
-  parrafo.innerHTML += boolean.constructor() + "<br><br>";
+  parrafo.innerHTML += number.constructor() + "<br><br>";
 
-  parrafoMetodoInstancia[0].innerHTML += boolean.toExponential() + "<br><br>";
-  parrafoMetodoInstancia[1].innerHTML += boolean.toFixed() + "<br><br>";
-  parrafoMetodoInstancia[2].innerHTML += boolean.toLocaleString() + "<br><br>";
-  parrafoMetodoInstancia[3].innerHTML += boolean.toPrecision() + "<br><br>";
-  parrafoMetodoInstancia[4].innerHTML += boolean.tostring() + "<br><br>";
-  parrafoMetodoInstancia[5].innerHTML += boolean.valueof() + "<br><br>";
+  parrafoMetodoInstancia[0].innerHTML += number.toExponential() + "<br><br>";
+  parrafoMetodoInstancia[1].innerHTML += number.toFixed() + "<br><br>";
+  parrafoMetodoInstancia[2].innerHTML += number.toLocaleString() + "<br><br>";
+  parrafoMetodoInstancia[3].innerHTML += number.toPrecision() + "<br><br>";
+  parrafoMetodoInstancia[4].innerHTML += number.tostring() + "<br><br>";
+  parrafoMetodoInstancia[5].innerHTML += number.valueof() + "<br><br>";
 
 }
-agregarBoolean();
+agregarnumber();
