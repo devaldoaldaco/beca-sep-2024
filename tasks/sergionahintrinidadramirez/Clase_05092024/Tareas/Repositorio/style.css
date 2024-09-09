@@ -1,0 +1,71 @@
+/* Estilo global */
+body {
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Sección */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulo */
+h2, h3 {
+    color: #5a5a5a;
+}
+
+/* Párrafos */
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Código en línea */
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #453ce7;
+}
+
+/* Caja de código */
+pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    overflow-x: auto;
+}
+
+/* Listas */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Ejercicios */
+h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #3498db;
+}
+
