@@ -1,5 +1,3 @@
-//Esto es un Array
-let cigarros = ["Marlboro", "Pall mall", "Camel", "Montana"];
 let explain;
 //explicaciones
 let boolean = {
