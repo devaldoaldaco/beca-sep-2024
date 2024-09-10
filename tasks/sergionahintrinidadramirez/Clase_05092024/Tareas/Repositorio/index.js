@@ -140,14 +140,14 @@ console.log(numeroDeCaracteres("eeee", "e")); // 4
 
 console.log("----------");
 console.log("Ejercicio 11");
-function sumarArreglo(arrsum) {
+function sumarArre(arrsum) {
   return arrsum.reduce((sum, num) => sum + num, 0);
 }
 
 // Código de prueba
-console.log(sumarArreglo([3, 1, 2])); // 6
-console.log(sumarArreglo([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // 55
-console.log(sumarArreglo([])); // 0
+console.log(sumarArre([3, 1, 2])); // 6
+console.log(sumarArre([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); // 55
+console.log(sumarArre([])); // 0
 
 console.log("----------");
 console.log("Ejercicio 12.");
