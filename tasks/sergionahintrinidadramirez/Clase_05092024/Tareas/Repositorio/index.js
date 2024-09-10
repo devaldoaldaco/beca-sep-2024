@@ -27,16 +27,15 @@ console.log("--------------------")
 console.log("Ejercicio 3")
 function bmi(peso, altura) {
   const bmiValue = peso / (altura * altura);
-  if (bmiValue < 18.5) {
-    return "Bajo de peso";
-  } else if (bmiValue < 25) {
-    return "Normal";
-  } else if (bmiValue < 30) {
-    return "Sobrepeso";
-  } else {
-    return "Obeso";
-  }
+  const bmiCategorias = [
+    {max: 18.5, category:"Bajo de peso"},
+    {max: 25, category:"Normal"},
+    {max: 30, category:"Sobrepeso"},
+    {max: Infinity, category:"Obeso"}
+  ]
+ return bmiCategorias.find(catego => bmiValue <= catego.max).category;
 }
+
 
 // código de prueba
 console.log(bmi(65, 1.8)) // "Normal"
