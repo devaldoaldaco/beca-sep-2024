@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#botonVerde,#botonAzul{
+    width: 15rem;
+    height: 3rem;
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.fondoAzul{
+    background-color: blue;
+}
+
+.fondoVerde{
+    background-color: greenyellow;
+}
