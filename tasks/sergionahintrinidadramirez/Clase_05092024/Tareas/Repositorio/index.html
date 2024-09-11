@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ejercicios github</title>
+</head>
+
+<body>
+    <h1>Ejercicios Github</h1>
+    <section class="intance-methods">
+        <h2>Ejercicios de JavaScript</h2>
+        <p>
+            Esta es una lista de ejercicios de JavaScript para personas que están empezando con programación. Como
+            requisito para hacer estos ejercicios debes conocer conceptos básicos de JavaScript como tipos y operadores,
+            variables, condicionales, ciclos, strings, arreglos, funciones y objetos literales.
+        </p>
+        <p>Esta es una lista de ejercicios de JavaScript es para comprender los conceptos básicos de JavaScript como
+            tipos y operadores, variables, condicionales, ciclos, strings, arreglos, funciones y objetos literales las
+            respuestas de estos ejercicios se encuentran al abrir la consola en el navegador.</p>
+
+        <h3>1. Contraseña válida</h3>
+        <p>Escribir una función llamada <code>contrasenaValida</code> que reciba un string y retorne <code>true</code>
+            si el string es igual a "2Fj(jjbFsuj" o "eoZiugBf&g9". De lo contrario debe retornar <code>false</code>.</p>
+        <pre><code>// código de prueba
+            console.log(contrasenaValida("2Fj(jjbFsuj")) // true
+            console.log(contrasenaValida("eoZiugBf&g9")) // true
+            console.log(contrasenaValida("hola")) // false
+            console.log(contrasenaValida("")) // false</code></pre>
+
+        <h3>2. Calcular impuestos</h3>
+        <p>Escribir una función llamada <code>calcularImpuestos</code> que reciba dos argumentos numéricos:
+            <code>edad</code> e <code>ingresos</code>. Si <code>edad</code> es igual o mayor a 18 y los ingresos son
+            iguales o mayores a 1000 debe retornar <code>ingresos</code> * 40%. De lo contrario retornar 0.
+        </p>
+        <pre><code>// código de prueba
+            console.log(calcularImpuestos(18, 1000)) // 400
+            console.log(calcularImpuestos(40, 10000)) // 4000
+            console.log(calcularImpuestos(17, 5000)) // 0
+            console.log(calcularImpuestos(30, 500)) // 0</code></pre>
+
+        <h3>3. IMC (Índice de masa corporal)</h3>
+        <p>Escribir una función llamada <code>bmi</code> que reciba dos argumentos: peso y altura, y retorne un string
+            con las siguientes posibilidades:</p>
+        <ul>
+            <li>"Bajo de peso" si el BMI &lt; 18.5</li>
+            <li>"Normal" si está entre 18.5 y 24.9</li>
+            <li>"Sobrepeso" si está entre 25 y 29.9</li>
+            <li>"Obeso" si es igual o mayor a 30</li>
+        </ul>
+        <pre><code>// código de prueba
+            console.log(bmi(65, 1.8)) // "Normal"
+            console.log(bmi(72, 1.6)) // "Sobrepeso"
+            console.log(bmi(52, 1.75)) // "Bajo de peso"
+            console.log(bmi(135, 1.7)) // "Obeso"</code></pre>
+
+        <h3>4. Imprimir un arreglo</h3>
+        <p>Escribir una función llamada <code>imprimirArreglo</code> que reciba un arreglo e imprima cada elemento en
+            una línea aparte:</p>
+        <pre><code>// código de prueba
+            console.log(imprimirArreglo(1, "Hola", 2, "Mundo"))
+            // 1
+            // Hola
+            // 2
+            // Mundo</code></pre>
+
+        <h3>5. Número de Likes</h3>
+        <p>Escribir una función llamada <code>likes</code> que reciba un número y retorne un string utilizando el
+            formato de K para miles y M para millones.</p>
+        <pre><code>// código de prueba
+            console.log(likes(983)) // "983"
+            console.log(likes(1900)) // "1K"
+            console.log(likes(54000)) // "54K"
+            console.log(likes(120800)) // "120K"
+            console.log(likes(25222444)) // "25M"</code></pre>
+
+        <h3>6. FizzBuzz</h3>
+        <p>Escribir una función llamada <code>fizzBuzz</code> que reciba un número y retorne un string de acuerdo a lo
+            siguiente:</p>
+        <ul>
+            <li>"fizz" si el número es múltiplo de 3.</li>
+            <li>"buzz" si el número es múltiplo de 5.</li>
+            <li>"fizzbuzz" si el número es múltiplo tanto de 3 como de 5.</li>
+            <li>Si no cumple ninguna de las condiciones anteriores debe retornar el mismo número.</li>
+        </ul>
+        <pre><code>// código de prueba
+            console.log(fizzBuzz(6)) // "fizz"
+            console.log(fizzBuzz(20)) // "buzz"
+            console.log(fizzBuzz(30)) // "fizzbuzz"
+            console.log(fizzBuzz(8)) // 8</code></pre>
+
+        <h3>7. Contar rango de números</h3>
+        <p>Escribir una función llamada <code>contarRango</code> que reciba dos números y retorne cuántos números hay
+            entre ellos (excluyéndolos).</p>
+        <pre><code>// código de prueba
+            console.log(contarRango(1, 9)) // 7
+            console.log(contarRango(1332, 8743)) // 7410
+            console.log(contarRango(5, 6)) // 0</code></pre>
+
+        <h3>8. Sumar rango de números</h3>
+        <p>Escribir una función llamada <code>sumarRango</code> que reciba dos argumentos: número inicial y número
+            final. La función debe retornar la suma de los números en ese rango (incluyéndolos).</p>
+        <pre><code>// código de prueba
+            console.log(sumarRango(0, 10)) // 55
+            console.log(sumarRango(12, 14)) // 39
+            console.log(sumarRango(5, 5)) // 0</code></pre>
+
+        <h3>9. Número de aes (letra "a")</h3>
+        <p>Escribir una función llamada <code>numeroDeAes</code> que reciba un string y retorne el número de veces que
+            aparece la letra "a".</p>
+        <pre><code>// código de prueba
+            console.log(numeroDeAes("abracadabra")) // 5
+            console.log(numeroDeAes("etinol")) // 0
+            console.log(numeroDeAes("")) // 0</code></pre>
+
+        <h3>10. Número de caracteres</h3>
+        <p>Escribir una función llamada <code>numeroDeCaracteres</code> que reciba un string y un caracter (un string de
+            un caracter). La función debe retornar el número de veces que aparece el caracter en el string.</p>
+        <pre><code>// código de prueba
+            console.log(numeroDeCaracteres("Hola Mundo", "o")) // 2
+            console.log(numeroDeCaracteres("MMMMM", "m")) // 0
+            console.log(numeroDeCaracteres("eeee", e)) // 4</code></pre>
+
+    </section>
+
+    <section class="more-methods">
+        <h3>11. Sumar arreglo</h3>
+        <p>Escribir una función llamada <code>sumarArreglo</code> que reciba un arreglo de números y retorne la suma de
+            todos los elementos.</p>
+        <pre><code>// código de prueba
+        console.log(sumarArreglo([3, 1, 2])) // 6
+        console.log(sumarArreglo([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) // 55
+        console.log(sumarArreglo([])) // 0</code></pre>
+
+        <h3>12. Multiplicar arreglo</h3>
+        <p>Escribir una función llamada <code>multiplicarArreglo</code> que reciba un arreglo de números y retorne la
+            multiplicación de todos los elementos.</p>
+        <pre><code>// código de prueba
+        console.log(multiplicarArreglo([4, 1, 2, 3])) // 24
+        console.log(multiplicarArreglo([1, 2, 3, 4, 5, 6, 7, 8])) // 40320
+        console.log(multiplicarArreglo([])) // 1</code></pre>
+
+        <h3>13. Remover ceros</h3>
+        <p>Escribir una función llamada <code>removerCeros</code> que reciba un arreglo de números y retorne un nuevo
+            arreglo excluyendo los ceros (0).</p>
+        <pre><code>// código de prueba
+        console.log(removerCeros([0, 1, 0, 2, 0, 3])) // [1, 2, 3]
+        console.log(removerCeros([9, 3, 6, 4])) // [9, 3, 6, 4]
+        console.log(removerCeros([0, 0, 0])) // []</code></pre>
+
+        <h3>14. Sumar arreglo entre el rango</h3>
+        <p>Escribir una función llamada <code>sumarArreglo</code> que reciba tres argumentos: un arreglo de números, la
+            posición inicial y la posición final. La función debe retornar la suma de todos los números dentro del rango
+            (la posición inicial y la posición final, incluyéndolas).</p>
+        <pre><code>// código de prueba
+        console.log(sumarArreglo([1, 2, 3], 1, 2)) // 5
+        console.log(sumarArreglo([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3, 6)) // 22
+        console.log(sumarArreglo([7, 8, 9], 0, 0)) // 0</code></pre>
+
+        <h3>15. Transcribir ADN a ARN</h3>
+        <p>Escribir una función llamada <code>transcribir</code> que reciba un string (una cadena de ADN) y retorne otro
+            string (su complemento ARN).</p>
+        <pre><code>// código de prueba
+        console.log(transcribir("ACGT")) // "UGCA"
+        console.log(transcribir("ACGTGGTCTTAA")) // "UGCACCAGAAUU"</code></pre>
+
+        <h3>16. Capitalizar palabra</h3>
+        <p>Escribir una función llamada <code>capitalizar</code> que reciba un string y capitalice la primera letra.</p>
+        <pre><code>// código de prueba
+        console.log(capitalizar("pedro")) // "Pedro"
+        console.log(capitalizar("hola mundo")) // "Hola mundo"
+        console.log(capitalizar("")) // ""</code></pre>
+
+        <h3>17. Capitalizar cada palabra</h3>
+        <p>Escribir una función llamada <code>capitalizar</code> que reciba un string y capitalice la primera letra
+            <strong>de cada palabra</strong>.</p>
+        <pre><code>// código de prueba
+        console.log(capitalizar("hola mundo")) // "Hola Mundo"
+        console.log(capitalizar("make it real")) // "Make It Real"
+        console.log(capitalizar("")) // ""</code></pre>
+
+        <h3>18. Encontrar el número máximo</h3>
+        <p>Escribir una función llamada <code>max</code> ue reciba un arreglo de números y retorne el número máximo:</p>
+        <pre><code>// código de prueba
+        console.log(max([3, 9, 6])) // 9
+        console.log(max([67, 35, 54, 26])) // 67
+        console.log(max([5, 9, 2, 4, 5, 7])) // 9</code></pre>
+
+        <h3>19. Encontrar el número mínimo</h3>
+        <p>Escribir una función llamada <code>min</code>ue reciba un arreglo de números y retorne el número mínimo:</p>
+        <pre><code>// código de prueba
+        console.log(min([3, 9, 6])) // 3
+        console.log(min([67, 35, 54, 26])) // 26
+        console.log(min([5, 9, 2, 4, 5, 7])) // 2</code></pre>
+
+        <h3>20. Generar contraseña</h3>
+        <p>Escribir una función llamada <code>password</code> que reciba un string y retorne un nuevo string realizando
+            los siguientes cambios:
+        <ul>
+            <li>Las mayúsculas se reemplazan por minúsculas.</li>
+            <li>Se eliminan los espacios en blanco</li>
+            <li>Reemplaza el caracter “a” por “4”</li>
+            <li>Reemplaza el caracter “e” por “3”</li>
+            <li>Reemplaza el caracter “i” por “1”</li>
+            <li>Reemplaza el caracter “o” por “0”</li>
+        </ul>
+        </p>
+        <pre><code>// código de prueba
+        console.log(password("hola")) // "h0l4"
+        console.log(password("esta es una prueba")) // "3st43sun4pru3b4"
+        console.log(password("")) // ""</code></pre>
+
+        <h3>21. Encontrar números pares en un arreglo</h3>
+        <p>Escribir una función llamada <code>pares</code> que reciba un arreglo de números y retorne un nuevo arreglo
+            con los números pares únicamente.</p>
+        <pre><code>// código de prueba
+        console.log(pares([1, 2, 3, 4, 5, 6])) // [2, 4, 6]
+        console.log(pares([])) // []</code></pre>
+
+        <h3>22. Encontrar posiciones de números pares</h3>
+        <p>Escribir una función llamada <code>posiciones</code> que reciba un arreglo de números y retorne un nuevo
+            arreglo <strong>con las posiciones</strong> donde se encuentran números pares.</p>
+        <pre><code>// código de prueba
+        console.log(posiciones([1, 2, 3, 4, 5, 6])) // [1, 3, 5]
+        console.log(posiciones([])) // []</code></pre>
+
+        <h3>23. Duplicar elementos de un arreglo</h3>
+        <p>Escribir una función llamada <code>duplicar</code> que reciba un arreglo de números y retorne un nuevo
+            arreglo donde cada número esté multiplicado por dos (2).</p>
+        <pre><code>// código de prueba
+        console.log(duplicar([1, 2, 3])) // [2, 4, 6]
+        console.log(duplicar([])) // []</code></pre>
+
+        <h3>24. Encontrar palabras que empiecen por "a"</h3>
+        <p>Escribir una función llamada <code>empiezanConA</code> que reciba un arreglo de strings y retorne un nuevo
+            arreglo con todas las palabras que empiecen por "a" (mayúscula o minúscula).</p>
+        <pre><code>// código de prueba
+        console.log(empiezanConA(["beta", "alfa", "Arbol", "gama"])) // ["alfa", "Arbol"]
+        console.log(empiezanConA(["beta", "delta", "gama"])) // []
+        console.log(empiezanConA([])) // []</code></pre>
+
+        <h3>25. Encontrar palabras que terminan en "s"</h3>
+        <p>Escribir una función llamada <code>terminanConS</code> que reciba un arreglo de strings y retorne un nuevo
+            arreglo con todas las palabras que terminan con "s" (mayúscula o minúscula).</p>
+        <pre><code>// código de prueba
+        console.log(terminanConS(["pruebas", "arroz", "árbol", "tokens"])) // ["pruebas", "tokens"]
+        console.log(terminanConS(["beta", "delta", "gama"])) // []
+        console.log(terminanConS([])) // []</code></pre>
+
+        <h3>26. Imprimir una matriz</h3>
+        <p>Escribir una función llamada <code>imprimirMatriz</code> que reciba una matriz (un arreglo de arreglos) e
+            imprima todos los elementos del arreglo.</p>
+        <pre><code>// código de prueba
+        console.log(imprimirMatriz([
+          [1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]
+        ]))
+        // 1
+        // 2
+        // 3
+        // 4
+        // 5
+        // 6
+        // 7
+        // 8
+        // 9</code></pre>
+
+        <h3>27. Traducir números a palabras</h3>
+        <p>Escribir una función llamada <code>numerosAPalabras</code> que reciba un arreglo de números (cada número en
+            el rango de 0 a 9) y retorne un nuevo arreglo convirtiendo cada número a su versión en palabras.</p>
+        <pre><code>// código de prueba
+        console.log(numerosAPalabras([0, 1, 2, 3, 4])) // ["cero", "uno", "dos", "tres", "cuatro"]
+        console.log(numerosAPalabras([5, 6, 7, 8, 9])) // ["cinco", "seis", "siete", "ocho", "nueve"]</code></pre>
+
+        <h3>28. Traducir palabras a números</h3>
+        <p>Escribir una función llamada <code>palabrasANumeros</code> que reciba un arreglo de strings y retorne un
+            nuevo arreglo traduciendo cada palabra a su versión numérica (del 0 al 9). Si la palabra no es un número,
+            traducir a -1.</p>
+        <pre><code>// código de prueba
+        console.log(palabrasANumeros(["cero", "uno", "dos", "tres", "what?", "cuatro"])) // [0, 1, 2, 3, -1, 4]
+        console.log(palabrasANumeros(["cinco", "seis", "siete", "ocho", "nueve"])) // [5, 6, 7, 8, 9]</code></pre>
+
+        <h3>29. Número de asteriscos en un arreglo</h3>
+        <p>Escribir una función llamada <code>numAsteriscos</code> que reciba un arreglo y retorne el número de
+            asteriscos:</p>
+        <pre><code>// código de prueba
+        console.log(numAsteriscos(['', '*', '', '*'])) // 2
+        console.log(numAsteriscos(['*', '*', '*'])) // 3
+        console.log(numAsteriscos([])) // 0</code></pre>
+
+        <h3>30. Número de asteriscos en una matriz</h3>
+        <p>Escribir una función llamada <code>numAsteriscos</code> que reciba una matriz (un arreglo de arreglos) y
+            retorne el número de asteriscos:</p>
+        <pre><code>// código de prueba
+        console.log(numAsteriscos([
+          ['*', '', '*'],
+          ['', '*', ''],
+          ['*', '', '*']
+        ]))
+        // 5</code></pre>
+
+        <h3>31. Distancia entre dos strings</h3>
+        <p>Escribir una función llamada <code>distancia</code> que reciba dos strings y retorne el número de caracteres
+            diferentes (comparando posición por posición).</p>
+        <p><strong>Nota:</strong> Puedes asumir que los strings siempre tienen la misma longitud. Sin embargo, si
+            quieres agregarle más dificultad, puedes pensar cómo solucionarlo si un string es más largo que el otro (la
+            diferencia entre las longitudes agregaría al resultado).</p>
+        <pre><code>// código de prueba
+        console.log(distancia("hola", "hola")) // 0
+        console.log(distancia("sol", "tol")) // 1
+        console.log(distancia("carro", "correr")) // 3</code></pre>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

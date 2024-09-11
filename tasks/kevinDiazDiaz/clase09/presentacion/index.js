@@ -16,8 +16,3 @@ const KEVIN ={
 KEVIN.presentacion();
 
 
-function hola(){
-    let name =20;
-}
-
-name=10;
