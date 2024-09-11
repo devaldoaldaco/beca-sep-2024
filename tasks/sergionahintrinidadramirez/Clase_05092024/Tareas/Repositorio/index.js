@@ -27,16 +27,15 @@ console.log("--------------------")
 console.log("Ejercicio 3")
 function bmi(peso, altura) {
   const bmiValue = peso / (altura * altura);
-  if (bmiValue < 18.5) {
-    return "Bajo de peso";
-  } else if (bmiValue < 25) {
-    return "Normal";
-  } else if (bmiValue < 30) {
-    return "Sobrepeso";
-  } else {
-    return "Obeso";
-  }
+  const bmiCategorias = [
+    {max: 18.5, category:"Bajo de peso"},
+    {max: 25, category:"Normal"},
+    {max: 30, category:"Sobrepeso"},
+    {max: Infinity, category:"Obeso"}
+  ]
+ return bmiCategorias.find(catego => bmiValue <= catego.max).category;
 }
+
 
 // código de prueba
 console.log(bmi(65, 1.8)) // "Normal"
@@ -437,20 +436,21 @@ console.log(
   ])
 ); // 5
 
+//CAMBIADO 
 console.log("----------");
 console.log("Ejercicio 31");
 function distancia(str1, str2) {
-  if (str1.length !== str2.length) {
-    console.error("Las cadenas deben tener la misma longitud");
-    //diferencia absoluta entre las longitudes de las dos cadenas
-    return Math.abs(str1.length - str2.length) + Array.from(str1).slice(0, Math.min(str1.length, str2.length)) 
-      .reduce((count, char, index) => {
-        return count + (char !== str2[index] ? 1 : 0); 
-      }, 0);
+  const minLength = Math.min(str1.length, str2.length);
+  const lengthDiff = Math.abs(str1.length - str2.length);
+  
+  let count = 0;
+  for (let i = 0; i < minLength; i++) {
+    if (str1[i] !== str2[i]) {
+      count++;
+    }
   }
-  return Array.from(str1).reduce((count, char, index) => {
-    return count + (char !== str2[index] ? 1 : 0);
-  }, 0);
+  
+  return count + lengthDiff;
 }
 
 // Código de prueba
