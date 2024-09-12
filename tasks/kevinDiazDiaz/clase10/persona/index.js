@@ -31,11 +31,11 @@ class Persona{
 
 
 
-let persona2= new Persona("Juan Manuel", 1.8, 75);
-let persona3= new Persona("Dulce Evelin", 1.6, 54);
-let persona4= new Persona("Ian Kaleb", 1.4, 38);
+const persona2= new Persona("Juan Manuel", 1.8, 75);
+const persona3= new Persona("Dulce Evelin", 1.6, 54);
+const persona4= new Persona("Ian Kaleb", 1.4, 38);
 
-let persona1= new Persona("Kevin", 1.7, 68, [persona2.name, persona3.name, persona4.name]);
+const persona1= new Persona("Kevin", 1.7, 68, [persona2.name, persona3.name, persona4.name]);
 
 
 
