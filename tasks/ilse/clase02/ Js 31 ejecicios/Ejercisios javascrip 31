@@ -1,0 +1,409 @@
+function contraseñaValida(password) { 1
+  const validPassword = ["2Fj(ijbfSuj", "eoZiu9Bf&g9"];
+  return validPassword.includes(password);
+}
+
+console.log(contraseñaValida("2Fj(ijbfSuj"));
+console.log(contraseñaValida("eoZiu9Bf&g9"));
+console.log(contraseñaValida("hola"));
+console.log(contraseñaValida(""));
+
+
+function calcularImpuestos(edad, ingresos) {2
+  if (edad >= 18 && ingresos >= 1000) {
+    return ingresos *0.40;
+  } else {
+    return 0;
+  }
+}
+
+console.log(calcularImpuestos(18, 1000));
+console.log(calcularImpuestos(40, 10000));
+console.log(calcularImpuestos(17, 500));
+console.log(calcularImpuestos(30, 500));
+
+function bmi(peso, altura) {3
+  const imc = peso / (altura * altura);
+  if (imc < 18.5) {
+    return "Bajo de peso";
+  } else if (imc >= 18.5 && imc <= 24.9) {
+    return "normal";
+  } else if (imc >= 25 && imc <= 29.9) {
+    return "sobrepeso";
+  } else {
+
+  }
+}
+
+console.log(bmi(65, 1.8));
+console.log(bmi(72, 1.6));
+console.log(bmi(52, 1.75));
+console.log(bmi(135, 1.7));
+
+function imprimirArreglo(arreglo) {
+  for (let i = 0; i < arreglo.lenght; i++) {
+    console.log('${i} ${arreglo[i]}');
+
+  }
+}
+imprimirArreglo([1, "Hola", 2, "Mundo"]);
+
+function likes(number) {
+  if (number < 1000) {
+    return number.toString();
+  }else if (number < 1000000) {
+    return (number / 1000).toFixed(0) + "k";
+  }else {
+    return (number / 1000000).toFixed(0) + "M";
+  }
+}
+console.log(likes(983));
+console.log(likes(1900));
+console.log(likes(54000));
+console.log(likes(1208000));
+console.log(likes(25222444));
+
+ function fizzBuzz(numero) {
+  if (numero % 3 === 0 && numero % 5 === 0) {
+    return "fizzbuzz";
+  } else if (numero % 3 === 0) {
+    return "fizz";
+  } else if (numero % 5 === 0) {
+    return "buzz";
+  } else {
+    return numero;
+  }
+ }
+ console.log(fizzBuzz(6));
+ console.log(fizzBuzz(20));
+ console.log(fizzBuzz(30));
+ console.log(fizzBuzz(8));
+
+ function contarRango(num1, num2) {
+  let contador = 0;
+  for (let i = num1 + 1; i < num2; i++) {
+    contador++;
+
+  }
+  return contador;
+ }
+ console.log(contarRango(1, 9));
+ console.log(contarRango(1332, 8743));
+ console.log(contarRango(5, 6));
+
+
+ function sumarRango(inicial, final) {
+  let suma = 0;
+  for (let i = inicial; i <= final; i++) {
+       suma += i; 
+  }
+  return suma;
+ }
+
+ console.log(sumarRango(0, 10));
+ console.log(sumarRango(12, 14));
+ console.log(sumarRango(5, 5));
+
+ function numeroDeAses(texto) {
+  let contador = 0;
+  for (let i = 0; i < texto.length; i++) {
+    if (texto[i] === 'a') {
+      contador++;
+    }
+  }
+  return contador;
+ }
+ console.log(numeroDeAses("abracadabra"));
+ console.log(numeroDeAses("etino1"));
+ console.log(numeroDeAses(""));
+
+ function numeroDeCaracteres(cadena, caracter) {
+  let contador = 0;
+  for (let i = 0; i < cadena.length; i++) {
+    if (cadena[i] === caracter) {
+      contador++;
+    }
+  }return contador;
+ }
+ console.log(numeroDeCaracteres("Hola Mundo", "0"));
+ console.log(numeroDeCaracteres("MMMMM", "m"));
+ console.log(numeroDeCaracteres("eeee", "e"))
+
+ function sumarArreglo(arr) {
+  return arr.reduce((acumulador, valorActual) => acumulador + valorActual, 0);
+  
+ }
+
+ console.log(sumarArreglo([3, 1, 2,]));
+ console.log(sumarArreglo([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+ console.log(sumarArreglo([]));
+
+ function multiplicarArreglo(arr) {
+  if (arr.lenght === 0) return 1;
+  return arr.reduce((acc, num) => acc * num, 1);
+ }
+
+ console.log(multiplicarArreglo([4,1, 2, 3]));
+ console.log(multiplicarArreglo([1, 2, 3, 4, 5, 6, 7, 8]));
+ console.log(multiplicarArreglo([]));
+
+ function removerCeros(arr) {
+  return arr.filter(num => num !== 0);
+ }
+ console.log(removerCeros([0, 1, 0, 2, 0, 3]));
+ console.log(removerCeros([9, 3, 6, 4]));
+ console.log(removerCeros([0, 0, 0]));
+
+ function sumarArreglo(arr, inicio, fin) {
+  let suma = 0;
+  for (let i = inicio; i <= fin; i++) {
+    suma += arr[i];
+  }
+  return suma; 
+ }
+ console.log(sumarArreglo([1, 2, 3], 1, 2));
+ console.log(sumarArreglo([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3, 6));
+ console.log(sumarArreglo([7, 8, 9], 0, 0));
+
+ function transcribir(adn) {
+  const mapaBases = {
+    'G' : 'C',
+    'C' : 'G',
+    'T' : 'A',
+    'A' : 'U',
+  };
+  const adnArray = adn.split('');
+  const arnArray = adnArray.map(base => mapaBases[base]);
+  return arnArray.join('');
+
+ }
+console.log(transcribir("ACGT"));
+console.log(transcribir("ACGTGGTCTTAA"));
+
+function capitalizar(cadena) {
+  if (cadena === "") {
+    return "";
+  }
+  const primeraLetraMayuscula = cadena[0]. toUpperCase();
+  const restoCadena = cadena.slice(1);
+  return primeraLetraMayuscula + restoCadena;
+}
+console.log(capitalizar("pedro"));
+console.log(capitalizar("hola mundo"));
+console.log(capitalizar(""));
+
+function capitalizar(cadena) {
+  const palabras = cadena.split('');
+  const palabrasCapitalizadas = palabras.map(palabra => {
+    return palabra.charAt(0). toUpperCase() + palabra.slice(1);
+  });
+  return palabrasCapitalizadas.join('');
+}
+console.log(capitalizar("hola mundo"));
+console.log(capitalizar("make it real"));
+console.log(capitalizar(""));
+
+function max(numeros) {
+  let maximo = numeros[0];
+  for (let i = 1; i < numeros.lenght; i++) {
+    if (numeros[i] > maximo) {
+      maximo = numeros[i];
+    }
+  }
+  return maximo;
+}
+
+console.log(max([3, 9, 6]));
+console.log(max([67, 35, 54, 26]));
+console.log(max([5, 9, 2, 4, 5, 7]))
+
+function min(numeros) {
+  let minimo = numeros[0];
+  for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] < minimo) {
+      minimo = numeros[i];
+    }
+  }
+  return minimo;
+}
+console.log(min([3, 9, 6]));
+console.log(min([67, 35, 54, 26]));
+console.log(min([5, 9, 2, 4, 5, 7]));
+
+function password(cadena) {
+  const minusculas = cadena.toLowerCase();
+  const sinEspacios = minusculas.replace(/\s/g, '');
+  const contraseña = sinEspacios 
+  .replace(/a/g, '4')
+  .replace(/e/g, '3')
+  .replace(/i/g, '1')
+  .replace(/o/g, '0');
+  return contraseña;
+}
+console.log(password("hola"));
+console.log(password("esta es una prueba"));
+console.log(password(""));
+
+function pares(array) {
+  const pares = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      pares.push(array[1]);
+    }
+  }
+  return pares;
+}
+console.log(pares([1, 2, 3, 4, 5, 6]));
+console.log(pares([]));
+
+function posiciones(array) {
+  const posicionesPares = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      posicionesPares.push(i);
+    }
+  }
+  return posicionesPares;
+}
+console.log(posiciones([1, 2, 3, 4, 5, 6]));
+console.log(posiciones([]));
+
+function duplicar(array) {
+  const duplicados = [];
+  for (let i = 0; i < array.length; i++) {
+    duplicados.push(array[i] * 2);
+  }
+  return duplicados;
+}
+console.log(duplicar([1, 2, 3]));
+console.log(duplicar([]));
+
+function empiezanConA(palabras ) {
+  const palabrasConA = [];
+  for (let i = 0; i < palabras.length; i++) {
+    const palabraMinuscula = palabras[i].toLowerCase();
+    if (palabraMinuscula.startsWith('a')) {
+      palabrasConA.push(palabras[i]);
+    }
+  }
+  return palabrasConA; 
+}
+console.log(empiezanConA(["beta", "alfa", "Arbol", "gama"]));
+console.log(empiezanConA(["beta", "delta", "gama"]));
+console.log(empiezanConA([]));
+
+function terminanConS(palabras) {
+  const palabrasConS = [];
+  for (let i = 0; i < palabras.length; i++) {
+    const palabraMinuscula = palabras[i].toLowerCase();
+    if (palabraMinuscula.endsWith('s')); {
+      palabrasConS.push(palabras[i]);
+    }
+  }
+  return palabrasConS;
+}
+const resultado1 = terminanConS(["pruebas", "arroz", "arbol", "tokens"]);
+const resultado2 = terminanConS(["beta", "adelta", "gama"]);
+const resultado3 = terminanConS(["sol","casa", "mesa"]);
+console.log(resultado1);
+console.log(resultado2);
+console.log(resultado3);
+
+function imprimirMatriz(matriz) {
+  for (let i = 0; i < matriz.length; i++) {
+    for (let j = 0; j < matriz[i].length; j++) {
+      console.log(matriz[i] [j]);
+    }
+  }
+}
+const miMatriz = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+
+];
+imprimirMatriz(miMatriz);
+
+function numerosAPalabras(numeros) {
+  const palabras = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"];
+  const resultado = []
+  for (let i = 0; i < numeros.length; i++) {
+    resultado.push(palabras[numeros[i]]);
+  }
+  return resultado;
+}
+console.log(numerosAPalabras([0, 1, 2, 3, 4]));
+console.log(numerosAPalabras([5, 6, 7, 8, 9]));
+
+function palabrasANumeros(palabras) {
+  const numerosEnEspañol1 = {
+    cero: 0,
+    uno: 1,
+    dos: 2,
+    tres: 3,
+    cuatro: 4,
+    cinco: 5,
+    seis: 6, 
+    siete: 7,
+    ocho: 8,
+    nueve: 9,
+
+  };
+  return palabras.map(palabras =>{
+    const numero = numerosEnEspañol1[palabras.toLowerCase()];
+    return numero !== undefined ? numero: -1;
+
+  });
+}
+console.log(palabrasANumeros(["cero", "uno", "dos", "tres",  "what?", "cuatro", ]));
+console.log(palabrasANumeros(["cinco", "seis", "siete", "ocho", "nueve"]));
+
+function numAsteriscos(arreglo) {
+  let contador = 0;
+  for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i] === '*') {
+      contador++;
+    }
+  }
+  return contador;
+}
+console.log(numAsteriscos(['', '', '', '*']));
+console.log(numAsteriscos(['*', '*', '*']));
+console.log(numAsteriscos([]));
+
+function numAsteriscos(matriz) {
+  let contador = 0;
+  for (let i = 0; i < matriz.length; i++) {
+    for (let j= 0; j < matriz[i].length; j++) {
+      if (matriz[i][j] === '*') {
+        contador++;
+      }
+    }
+  }
+  return contador;
+}
+const matrizEjemplo = [
+  ['*', '', '*'],
+  ['', '', '*'],
+  ['*','', '*'],
+]
+console.log(numAsteriscos(matrizEjemplo));
+
+function distancia(cadena1, cadena2,) {
+  let contadorDiferencias = 0;
+  let cadenaMasLarga = cadena1.length > cadena2.length ? cadena1 : cadena2;
+  let  cadenaMasCorta = cadena1.length < cadena2.length ? cadena1 : cadena2;
+  while (cadenaMasCorta.length < cadenaMasLarga.length) {
+    cadenaMasCorta += '';
+  }
+  for (let i = 0; i < cadenaMasLarga.length; i++) {
+    if (cadenaMasLarga[i] !== cadenaMasCorta[i]) {
+      contadorDiferencias++;
+    }
+  }
+  return contadorDiferencias;
+}
+console.log(distancia("hola", "hola"));
+console.log(distancia("sol", "tol", ));
+console.log(distancia("carro", "correr",));
+console.log(distancia("hola", "ho"));

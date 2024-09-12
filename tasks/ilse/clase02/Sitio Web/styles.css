@@ -1,0 +1,504 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los dos navs */
+    align-items: center;
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    background: linear-gradient(135deg, #ff01c8, #ff01c8); /* Color base rosa */
+    position: relative; /* Para posicionar el pseudo-elemento */
+    overflow: hidden; /* Para asegurar que las ondas no se salgan de la sección */
+}
+
+.main-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 0, 200, 0.5), rgba(255, 0, 200, 0) 70%),
+                linear-gradient(135deg, rgba(183, 0, 255, 0.4), rgba(142, 68, 173, 0.3)); /* Degradado morado con menor opacidad */
+    background-blend-mode: overlay; /* Mezcla los dos fondos */
+    background-size: 150% 150%; /* Ajusta el tamaño para el efecto de ondas */
+    animation: wave-animation 10s linear infinite; /* Animación de ondas */
+    z-index: 1; /* Asegura que el pseudo-elemento esté encima del fondo */
+}
+
+.main-header > * {
+    position: relative; /* Para asegurar que el contenido esté encima del pseudo-elemento */
+    z-index: 2;
+}
+
+/* Animación para el efecto de ondas */
+@keyframes wave-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+
+/* Estilo para la navegación a la izquierda */
+.nav-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para la navegación a la derecha */
+.nav-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Espacio entre los enlaces */
+}
+
+/* Estilo para los enlaces */
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto del enlace */
+}
+
+/* Estilo específico para el enlace "Richard" */
+.richard-link {
+    font-style: italic;
+    font-weight: bold; /* Opcional: negrita para resaltar */
+}
+
+/* Estilo para el resto de los enlaces */
+.nav-right a {
+    color: #ffffff;
+    transition: color 0.3s ease; /* Transición para el efecto hover */
+    font-weight: bold; /* Opcional: negrita para resaltar */
+
+}
+
+.nav-right a:hover {
+    color: #000000; /* Color al pasar el cursor por encima */
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px;
+    background: #ff01c8; /* Color base rosa */
+    position: relative; /* Para posicionar el pseudo-elemento */
+    overflow: hidden; /* Para asegurar que las ondas no se salgan de la sección */
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 0, 200, 0.6), rgba(255, 0, 200, 0) 60%), /* Rosa dominante */
+                linear-gradient(135deg, rgba(155, 89, 182, 0.4), rgba(142, 68, 173, 0.3)); /* Morado sutil */
+    background-blend-mode: overlay; /* Mezcla los dos fondos */
+    background-size: 150% 150%; /* Ajusta el tamaño para el efecto de ondas */
+    animation: wave-animation 10s linear infinite; /* Animación de ondas */
+    z-index: 1; /* Asegura que el pseudo-elemento esté encima del fondo */
+}
+
+.hero-section > * {
+    position: relative; /* Para asegurar que el contenido esté encima del pseudo-elemento */
+    z-index: 2;
+}
+
+/* Animación para el efecto de ondas */
+@keyframes wave-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+
+.hero-section > div {
+    flex: 1;
+    padding: 100px;
+}
+
+.hero-section h1 {
+    margin: 0;
+}
+
+.hero-section p {
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #FF1493;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos de la sección de estadísticas */
+.stats-section {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    flex: 1;
+    max-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stat-item h1, .stat-item h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.stat-item p {
+    margin: 10px 0 0;
+}
+
+/* Estilos de la sección de contenido 1 */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px;
+    background-color: #ffffff;
+}
+
+.text-content {
+    flex: 1;
+    padding: 100px;
+}
+
+.text-content h5 {
+    margin: 0;
+    color: #007bff;
+}
+
+.text-content h2 {
+    margin: 10px 0;
+}
+
+.text-content p {
+    margin: 10px 0;
+}
+
+.text-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-content a:hover {
+    text-decoration: underline;
+}
+
+.feature-img {
+    flex: 1;
+    padding: 20px;
+}
+
+.feature-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos de la nueva sección de contenido 2*/
+.new-content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px;
+    background-color: #ffffff;
+}
+
+.new-content-section .text-content {
+    flex: 1;
+    padding: 100px;
+}
+
+.new-content-section .text-content h5 {
+    margin: 0;
+    color: #007bff;
+}
+
+.new-content-section .text-content h2 {
+    margin: 10px 0;
+}
+
+.new-content-section .text-content p {
+    margin: 10px 0;
+}
+
+.new-content-section .recipe-card {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.new-content-section .recipe-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos de la sección de características */
+
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+.feature-item {
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+}
+
+.feature-item img {
+    max-width: 50px;
+    height: auto;
+}
+
+.features-section .feature-item {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.features-section .feature-item img {
+    max-width: 50px;
+    height: auto;
+}
+
+.features-section .feature-item h3 {
+    margin: 10px 0;
+    color: #000000;
+}
+
+.features-section .feature-item p {
+    margin: 0;
+}
+/* Estilos de la sección de contenido 3 */
+/* Centrar texto y imagen en la nueva sección */
+.new-contento-section {
+    background-color: #1c1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+}
+
+.new-contento-section .text4-content {
+    margin-bottom: 20px;
+}
+
+.new-contento-section .text4-content h5 {
+    font-size: 1.2rem; /* Tamaño del subtítulo */
+    color: #ffffff;       /* Color del subtítulo */
+}
+
+.new-contento-section .text4-content h2 {
+    font-size: 2rem;   /* Tamaño del título */
+    color: #ffffff;       /* Color del título */
+}
+
+.new-contento-section .recipet-card img {
+    max-width: 80%;    /* Tamaño de la imagen */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados opcional */
+}
+
+
+/* Sección final */
+.fin-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+    background: #ff01c8; /* Rosa dominante */
+    position: relative; /* Para posicionar el pseudo-elemento */
+    overflow: hidden; /* Para asegurar que las ondas no se salgan de la sección */
+}
+
+/* Efecto de ondas y degradado */
+.fin-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 0, 200, 0.6), rgba(255, 0, 200, 0) 60%), /* Rosa dominante */
+                linear-gradient(135deg, rgba(155, 89, 182, 0.4), rgba(142, 68, 173, 0.3)); /* Morado sutil */
+    background-blend-mode: overlay; /* Mezcla los dos fondos */
+    background-size: 150% 150%; /* Ajusta el tamaño para el efecto de ondas */
+    animation: wave-animation 10s linear infinite; /* Animación de ondas */
+    z-index: 1; /* Asegura que el pseudo-elemento esté encima del fondo */
+}
+
+/* Estilo del botón */
+.ctaA-button {
+    background-color: #ff01c8;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transición para el efecto de resplandor */
+    position: relative; /* Para asegurar que el botón esté encima del fondo */
+    z-index: 2;
+}
+
+/* Efecto de resplandor al pasar el cursor sobre el botón */
+.ctaA-button:hover {
+    box-shadow: 0 4px 12px #FF1493; /* Resplandor alrededor del botón */
+    transform: scale(1.05); /* Escala ligeramente el botón */
+}
+
+/* Estilo del texto */
+.fin-section .textfin-content h5 {
+    font-size: 1.2rem; /* Tamaño del subtítulo */
+    color: #000000; /* Color del subtítulo */
+    position: relative; /* Para asegurar que el texto esté encima del fondo */
+    z-index: 2;
+}
+
+.fin-section .textfin-content h2 {
+    font-size: 2rem; /* Tamaño del título */
+    color: #000000; /* Color del título */
+    position: relative; /* Para asegurar que el texto esté encima del fondo */
+    z-index: 2;
+}
+
+/* Animación para el efecto de ondas */
+@keyframes wave-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Sección final */
+.final-section {
+    
+    background-color: #1c1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px; /* Ajusta el padding según sea necesario */
+}
+
+/* Contenedor del texto y formulario */
+.textfinal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.textfinal-content {
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+/* Formulario de suscripción */
+.subscription-form {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el campo de correo y el botón */
+    justify-content: center; /* Centra el formulario en su contenedor */
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    margin: 0; /* Elimina el margen para pegar el botón */
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.subscribe-button {
+    background-color: #FF1493;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    white-space: nowrap; /* Evita que el texto del botón se ajuste en varias líneas */
+}
+
+.final-section .textfinal-content h5 {
+    font-size: 1rem; /* Tamaño del subtítulo */
+    color: #a5a5a5;       /* Color del subtítulo */
+}
+
+.final-section .textfinal-content h2 {
+    font-size: 2rem;   /* Tamaño del título */
+    color: #ffffff;       /* Color del título */
+}
+
+.subscribe-button:hover {
+    box-shadow: 0 4px 12px rgba(255, 0, 230, 0.7);
+    transform: scale(1.05);
+}
+
+
+footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

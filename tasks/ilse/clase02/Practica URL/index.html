@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo de URL</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="section">
+            <h2>Obtener nombre de dominio</h2>
+            <label for="url">Ingresa una URL</label>
+            <input type="text" id="url" value="https://github.com/carbonfive/raygun">
+            <button onclik="extraerDominio()">Obtener dominio</button>
+            <p>Dominio: <span id="resultado-dominio"></span></p>
+        </div>
+
+        <div class="section">
+            <h2>Obtener apellidos de 'Miguel'</h2>
+            <label for="texto">texto:</label>
+
+            <textarea id="texto">
+                Miguel Perez, ¿como estas? - Genial, ¿como esta Juan Garcia y Miguel lopez?
+                No se, pero Miguel Ramirez esta bien.
+                Aun juegas con Miguel Sandoval, Miguel Leon y Miguel Vargas?
+            </textarea>
+            <button onclick="extraerApellidos()">Obtener apellidos </button>
+            <p>Apellidos: <span id="resultado-apellidos"></span></p>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
