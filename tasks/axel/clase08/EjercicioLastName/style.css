@@ -1,0 +1,15 @@
+body{
+    background-color: bisque;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 500px;
+    height: 100px;
+}
