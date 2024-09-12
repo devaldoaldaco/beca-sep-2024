@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    background-color: bisque;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: inline-block;
+    padding-left: 45%;
+}
+div{
+    padding-left: 30%;
+}
