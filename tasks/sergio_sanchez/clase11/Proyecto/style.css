@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    background-image: url('./img/bg.png');
+    width:100%;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#my_datos{
+    display: none;
+}
+#my_movimientos{
+    display: none;
+}
