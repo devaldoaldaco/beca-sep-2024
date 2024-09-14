@@ -155,4 +155,108 @@ ficha.media();
 function Cuenta(nombre, saldo){
     this.nombre=nombre;
     this.saldo=saldo;
+
+    this.ingresar= function(efectivo){
+        this.saldo+=efectivo;
+        return console.log(`Hola ${this.nombre} tu nuevo saldo es ${this.saldo}`);
+    }
+
+    this.retirar=function(efectivo){
+        if (efectivo<=saldo){
+            this.saldo-=efectivo;
+            return console.log(`Hola ${this.nombre} tu nuevo saldo es ${this.saldo}`);
+        }
+        
+        return console.log("No puedes retirar más de tu saldo");
+    }
 }
+
+const cliente1 = new Cuenta('Kevin', 2000);
+
+cliente1.ingresar(200);
+cliente1.retirar(2500);
+cliente1.retirar(500);
+
+
+//Ejercicio 6
+
+class Piedra{
+    constructor(masa, volumen){
+        this.masa=masa;
+        this.volumen=volumen;
+    }
+
+    densidad(){
+        let densidad=this.masa/this.volumen;
+        console.log(`La densidad es ${densidad}`);
+    }
+}
+
+const piedra= new Piedra(2, 5);
+
+piedra.densidad();
+
+
+//Ejercicio 7
+let alumno={
+    nombre: 'Juan',
+    ingles: 10,
+    progra: 9,
+    html: 9,
+
+    media(){
+        let total= this.ingles+this.progra+this.html;
+        let media=total/3;
+        return console.log(`La media es ${media}`);
+    }
+};
+
+
+console.log(alumno.nombre);
+console.log(alumno.media());
+
+
+//Ejercicio 8
+const articulo={
+    precio: 100,
+    decuento: 20,
+
+    neto(){
+        let n_precio=this.precio*(1-this.decuento/100);
+        return console.log(`El nuevo precio es $${n_precio}`);
+    }
+};
+
+articulo.neto();
+articulo.precio=200;
+articulo.neto();
+
+
+//Ejercicio 9
+
+class Proveedor{
+    constructor(nombre, email, telefono){
+        this.nombre=nombre;
+        this.email=email;
+        this.telefono=telefono;
+    }
+
+}
+
+class Articulo{
+    constructor(nombre, proveedor, precio){
+        this.nombre=nombre;
+        this.proveedor=proveedor
+        this.precio=precio;
+    }
+
+    telefono(){
+        return console.log(this.proveedor.telefono);
+    }
+}
+
+const proveedor= new Proveedor('Mapped', 'mapped@gmail.com', '5526375142');
+const articulo1= new Articulo('Lapiz', proveedor, 4);
+
+articulo1.telefono();
+
