@@ -1,0 +1,25 @@
+{
+  "name": "clase_13092024",
+  "version": "1.0.0",
+  "description": "This a web component build with LitElement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --wath"
+  },
+  "keywords": [
+    "LitElement",
+    "Counter",
+    "Web",
+    "Css",
+    "webComponent"
+  ],
+  "author": "Sergio-Trinidad",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^3.2.0"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}
