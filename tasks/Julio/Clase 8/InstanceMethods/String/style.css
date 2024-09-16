@@ -1,0 +1,19 @@
+body{
+
+    background-color: #D2B4DE;
+
+}
+
+
+h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+h2:hover{
+    background-color: white;
+}
