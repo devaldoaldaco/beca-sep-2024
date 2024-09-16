@@ -1,0 +1,24 @@
+{
+  "name": "prove1",
+  "version": "1.0.0",
+  "description": "first project of lit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "keywords": [
+    "lit",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Julio Santillan",
+  "license": "ISC",
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  },
+  "dependencies": {
+    "lit": "^3.2.0"
+  }
+}
