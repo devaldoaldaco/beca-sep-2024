@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 50px;
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.circle {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    background-color: #334155;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.circle p {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 5px;
+    margin: 0;
+}
+h2{
+    text-align: center;
+    color: #1e2e43 ;
+}
