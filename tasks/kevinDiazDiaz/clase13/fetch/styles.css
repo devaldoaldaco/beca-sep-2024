@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+img {
+    border-radius: 50%; 
+    margin: 0 0 0 1.5rem;
+}
+
+section{
+    width: 6rem;
+    margin: 2rem 0 0 4rem;
+}
+
+p{
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    margin: 1rem;
+}
