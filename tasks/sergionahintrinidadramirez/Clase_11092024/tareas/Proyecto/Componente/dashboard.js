@@ -12,6 +12,7 @@ export class Dashboard extends HTMLElement {
     }
     render() {
         const template = `
+        <style>
             .dashboard-container {
             display: flex;
             flex-direction: column;

@@ -6,6 +6,34 @@ export class Login extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
+        this.promesaValidar = (conError) => {
+            return new Promise((resolve, reject) => {
+                Swal.fire({
+                    title: "Validando tu Información",
+                    allowOutsideClick: false,
+                    timerProgressBar: true,
+                    backdrop: `
+                    rgba(0,0,60,0.4)
+                    no-repeat
+                  `,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+                setTimeout(() => {
+                    if (conError) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Hubo un error al validar tu usuario',
+                        });
+                        reject(new Error("Error en validar"));
+                    } else {
+                        resolve("Validacion exitosa");
+                    }
+                }, 5000);
+            });
+        };
     }
 
     connectedCallback() {
@@ -23,48 +51,56 @@ export class Login extends HTMLElement {
         // Validación
         if (usuarioInput === "sergio.trinidad" && passwordInput === "root") {
             console.log(`Bienvenido ${usuarioInput}`);
+            // IMPLEMENTACION DE PROMESA
+            this.promesaValidar(false).then(
+                (mensaje) => {
+                    console.log(mensaje);
+                    // Crear el usuario
+                    const user = new UsuarioBBVA("Sergio N Trinidad", "1563393264", 3000, "4152314147732245");
+                    user.ocultardatosSencibles();
+                    //notificacion
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: "top-end",
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.onmouseenter = Swal.stopTimer;
+                            toast.onmouseleave = Swal.resumeTimer;
+                        }
+                    });
+                    Toast.fire({
+                        icon: "success",
+                        title: "Inicio de sesion Exitoso",
+                        text: `Bienvenido ${user.nombre}`
+                    });
 
-            // Crear el usuario
-            const user = new UsuarioBBVA("Sergio N Trinidad", "1563393264", 3000, "4152314147732245");
-            user.ocultardatosSencibles();
-            //notificacion
-            const Toast = Swal.mixin({
-                toast: true,
-                position: "top-end",
-                showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.onmouseenter = Swal.stopTimer;
-                    toast.onmouseleave = Swal.resumeTimer;
-                }
-            });
-            Toast.fire({
-                icon: "success",
-                title: "Inicio de sesion Exitoso",
-                text: `Bienvenido ${user.nombre}`
-            });
+                    // Relación con banco
+                    const bbva = new Banco(user);
 
-            // Relación con banco
-            const bbva = new Banco(user);
+                    // Generar movimientos
+                    const movimientos = [
+                        new Movimientos('SPEI enviado Santander', 'Transferencia bancaria', 1200),
+                        new Movimientos('Pago nómina', 'Movimiento BBVA', 4000),
+                        new Movimientos('Pago a cuenta de terceros', 'Movimiento BBVA', 350),
+                        new Movimientos('SPEI enviado Nu México', 'Transferencia bancaria', -1000),
+                        new Movimientos('SPEI enviado STP', 'Transferencia bancaria', -219)
+                    ];
 
-            // Generar movimientos
-            const movimientos = [
-                new Movimientos('SPEI enviado Santander', 'Transferencia bancaria', 1200),
-                new Movimientos('Pago nómina', 'Movimiento BBVA', 4000),
-                new Movimientos('Pago a cuenta de terceros', 'Movimiento BBVA', 350),
-                new Movimientos('SPEI enviado Nu México', 'Transferencia bancaria', -1000),
-                new Movimientos('SPEI enviado STP', 'Transferencia bancaria', -219)
-            ];
+                    movimientos.forEach(mov => bbva.agregarMovimiento(mov))
+                    console.log(bbva);
 
-            movimientos.forEach(mov => bbva.agregarMovimiento(mov))
-            console.log(bbva);
-
-            // bbva.movimiento.forEach(mov=>{
-            //     console.log(`Tipo de Movimiento: ${mov.tipoMovimiento}, Tipo de Pago: ${mov.tipoPago}, Importe: $${mov.importe}`);
-            // })
-            this.envioDetails(bbva)
-            this.mostrarDashboard(bbva);
+                    // bbva.movimiento.forEach(mov=>{
+                    //     console.log(`Tipo de Movimiento: ${mov.tipoMovimiento}, Tipo de Pago: ${mov.tipoPago}, Importe: $${mov.importe}`);
+                    // })
+                    this.envioDetails(bbva)
+                    this.mostrarDashboard(bbva);
+                })
+                .catch(
+                    (error) => {
+                        console.error(error);
+                    })
         } else {
             console.log("No se encontró usuario");
         }
@@ -138,6 +174,7 @@ export class Login extends HTMLElement {
                     `,
                     icon: 'info',
                     confirmButtonText: 'Aceptar',
+                   
                 });
             });
             lista.appendChild(li);
