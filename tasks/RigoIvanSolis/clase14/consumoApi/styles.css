@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 0 auto;
+    max-width: 640px; 
+}
+
+.persona {
+    width: calc(25% - 20px); 
+    text-align: center;
+    margin: 10px; 
+}
+
+.persona img {
+    width: 100%; 
+    height: auto;
+    border-radius: 50%; 
+}
+
+.persona p {
+    margin-top: 5px; 
+    font-size: 14px; 
+}
+
+
+@media (max-width: 768px) {
+    .persona {
+        width: calc(33.33% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .persona {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 320px) {
+    .persona {
+        width: 100%; 
+    }
+}
