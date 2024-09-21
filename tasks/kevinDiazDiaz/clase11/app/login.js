@@ -1,4 +1,4 @@
-export class Login extends HTMLElement {
+export class LoginPage extends HTMLElement {
     constructor() {
         super();
         
