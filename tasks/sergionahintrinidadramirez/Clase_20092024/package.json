@@ -4,7 +4,9 @@
   "description": "This is an application with login, dashboard and details this only has the view and one functionality",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --wath"
+
   },
   "keywords": [
     "Lit",
@@ -14,5 +16,11 @@
     "app"
   ],
   "author": "Sergio Trinidad",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^3.2.0"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
 }
