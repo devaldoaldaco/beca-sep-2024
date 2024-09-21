@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    height: 100px;
+}
+
+
+section {
+    width: 500px;
+}
+
+div {
+    text-align: center;
+    margin: 1px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: #30485b;
+    border-radius: 50%; /*Sirve para indicar el porcentaje de redondeo de esquinas de un elemento*/
+} 
+
+
