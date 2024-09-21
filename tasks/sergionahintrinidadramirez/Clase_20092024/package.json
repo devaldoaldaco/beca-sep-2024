@@ -1,0 +1,18 @@
+{
+  "name": "clase_20092024",
+  "version": "1.0.0",
+  "description": "This is an application with login, dashboard and details this only has the view and one functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Lit",
+    "login",
+    "litelement",
+    "dashboard",
+    "app"
+  ],
+  "author": "Sergio Trinidad",
+  "license": "ISC"
+}
