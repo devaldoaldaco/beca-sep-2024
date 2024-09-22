@@ -100,7 +100,7 @@ export class BbvaApp extends LitElement {
                     toast: true,
                     position: "top-end",
                     showConfirmButton: false,
-                    timer: 2000,
+                    timer: 23000,
                     timerProgressBar: true,
                     didOpen: (toast) => {
                         toast.onmouseenter = Swal.stopTimer;

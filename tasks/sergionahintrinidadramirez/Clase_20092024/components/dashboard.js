@@ -10,7 +10,7 @@ export class Dashboard extends LitElement {
 
     constructor() {
         super();
-        this.banco = {};
+        this.banco = null;
     }
     _verDetalles() {
         console.log("Boton clickeado")
