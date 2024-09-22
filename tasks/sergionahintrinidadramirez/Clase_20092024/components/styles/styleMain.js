@@ -1,20 +1,10 @@
+import { css } from "lit";
+
+export const styleMain = css`
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #03529B, #0695D7, #50BBEB);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFFF;
-}
-bbva-login{
-  margin-top: 2em;
 }
 bbva-login,
 bbva-dashboard,
@@ -80,3 +70,4 @@ button:hover {
       padding: 20px;
   }
 }
+`
