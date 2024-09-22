@@ -1,117 +1,154 @@
 import {css} from 'lit'
 
 export const styleDashboard = css`
-  .dashboard-container {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            padding: 30px;
-            background-color: #f0f8ff;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(3, 82, 155, 0.1);
-            max-width: 600px;
-            margin: 40px auto;
-            }
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-            h1, h2 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #03529B;
-            margin: 0;
-            }
+#title {
+  color: #03529B;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-            h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-align: center;
-            }
+/* Contenedor del dashboard */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  background-color: #f0f8ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(3, 82, 155, 0.1);
+  max-width: 700px;
+  margin: 40px auto;
+}
 
-            h2 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            }
-            #title{
-            color: #F1F8FF;
+/* Estilo de las secciones de cuenta y tarjeta */
+.cuenta, .tarjeta {
+  background-color: #FFFFFF;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(6, 149, 215, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-            }
-            .cuenta, .tarjeta {
-            background-color: #FFFF;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(6, 149, 215, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
+.cuenta:hover, .tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(6, 149, 215, 0.2);
+}
 
-            .cuenta:hover, .tarjeta:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(6, 149, 215, 0.2);
-            }
+/* Estilos de los títulos */
+h1, h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #03529B;
+  margin-bottom: 15px;
+}
 
-            .info-cuenta, .info-tarjeta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #0695D7;
-            }
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
 
-            #saldo {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #03529B;
-            }
+/* Contenedor de la información de cuenta */
+.info-cuenta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+  gap: 15px; 
+}
 
-            button {
-            padding: 10px 15px;
-            background-color: #0695D7;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-            }
+/* Información de cuenta y saldo */
+#cuenta {
+  font-size: 1em;
+  color: #50BBEB;
+  flex: 1 1 100%; 
+}
 
-            button:hover {
-            background-color: #03529B;
-            transform: scale(1.05);
-            }
+#saldo {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #03529B;
+  margin-top: 5px;
+  flex: 1 1 auto; 
+}
 
-            #nombre-usuario {
-            color: #50BBEB;
-            font-weight: bold;
-            }
-
-            #cuenta, #tarjeta {
-            font-size: 0.9em;
-            color: #50BBEB;
-            }
-
-            body {
-            background-color: #e6f3ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-          
-            .volver-button {
-background-color: #007BFF;
-color: white;
-border: none;
-padding: 10px 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin-top: 20px;
-cursor: pointer;
-border-radius: 5px;
-transition-duration: 0.4s;
+/* Estilo del botón cerrar sesión */
+.volver-button {
+  background-color: #FF6347; 
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 99, 71, 0.4);
+  align-self: flex-end; 
 }
 
 .volver-button:hover {
-    background-color: #0056b3
+  background-color: #FF4500; 
+  box-shadow: 0 6px 20px rgba(255, 69, 0, 0.5);
+  transform: translateY(-3px);
+}
+
+/* Estilo del botón detalles */
+#detalles-tarjeta {
+  background-color: #007BFF;
+  color: #FFFFFF; 
+  border: none;
+  padding: 10px 15px; 
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4); 
+}
+
+#detalles-tarjeta:hover {
+  background-color: #0056b3; 
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6); 
+  transform: translateY(-3px); 
+}
+
+/* Estilo del contenedor de tarjeta */
+.info-tarjeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#nombre-usuario {
+  color: #50BBEB;
+  font-weight: bold;
+}
+
+#tarjeta {
+  font-size: 1em;
+  color: #50BBEB;
+  flex: 1 1 100%;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 20px;
+  }
+  .info-cuenta, .info-tarjeta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .volver-button {
+    align-self: center;
+    width: 100%;
+  }
 }
 `

@@ -6,6 +6,7 @@ import { UsuarioBBVA } from "../../Clase_11092024/tareas/Proyecto/Clases/Usuario
 import { Banco } from "./classes/Banco";
 import { Movimientos } from "./classes/Movimientos"
 import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/+esm';
+import { styleMain } from "./styles/styleMain";
 
 export class BbvaApp extends LitElement {
     static properties = {
@@ -15,7 +16,7 @@ export class BbvaApp extends LitElement {
         showDashboard: { type: Boolean },
         showDetails: { type: Boolean },
     }
-    static styles = []
+    static styles = [styleMain]
     constructor() {
         super();
         this.user = null;
@@ -52,7 +53,7 @@ export class BbvaApp extends LitElement {
                 } else {
                     resolve("Validacion exitosa");
                 }
-            }, 2500);
+            }, 1000);
         });
     }
     crearUsuario(nombre,cuenta,saldo,tarjeta) {
@@ -100,7 +101,7 @@ export class BbvaApp extends LitElement {
                     toast: true,
                     position: "top-end",
                     showConfirmButton: false,
-                    timer: 23000,
+                    timer: 2000,
                     timerProgressBar: true,
                     didOpen: (toast) => {
                         toast.onmouseenter = Swal.stopTimer;

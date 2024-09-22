@@ -1,6 +1,6 @@
 import {css} from 'lit';
 
-export const styleLogin = css `
+export const styleLogin = css`
 .form-login {
     background-color: #FFFF;
     border-radius: 15px;
@@ -8,7 +8,7 @@ export const styleLogin = css `
     box-shadow: 0 4px 20px rgba(3, 82, 155, 0.1);
     max-width: 500px;
     width: 100%;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .form-login h5 {

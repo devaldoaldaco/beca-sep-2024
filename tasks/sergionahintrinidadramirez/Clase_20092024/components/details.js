@@ -11,7 +11,7 @@ export class Details extends LitElement{
     
     constructor() {
         super();
-        this.banco = null;
+        this.banco = {};
     }
     _mostrarTicketMovimiento(movimiento){
         Swal.fire({
