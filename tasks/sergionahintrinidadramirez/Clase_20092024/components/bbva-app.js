@@ -52,7 +52,7 @@ export class BbvaApp extends LitElement {
                 } else {
                     resolve("Validacion exitosa");
                 }
-            }, 5000);
+            }, 2500);
         });
     }
     crearUsuario(nombre,cuenta,saldo,tarjeta) {
@@ -100,7 +100,7 @@ export class BbvaApp extends LitElement {
                     toast: true,
                     position: "top-end",
                     showConfirmButton: false,
-                    timer: 3000,
+                    timer: 2000,
                     timerProgressBar: true,
                     didOpen: (toast) => {
                         toast.onmouseenter = Swal.stopTimer;
@@ -130,14 +130,20 @@ export class BbvaApp extends LitElement {
     }
     //Mostrar detalles del banco
     handleViewDetails(){
-        this.showDetails = true;
-        this.showDashboard = false;
+        this.showDetails = false;
+        this.showDashboard = true;
     }
 
     //Regresar a dashboard
     handleBackToDashboard(){
-        this.showDetails = false;
+        this.showDetails = true;
+        this.showDashboard = false;
+    }
+
+    //Cerrar Sesion
+    handleViewLogin(){
         this.showDashboard = true;
+        this.isAuthenticated = false;
     }
 
     render() {
@@ -146,7 +152,7 @@ export class BbvaApp extends LitElement {
             <bbva-login @login="${this.handleLogin}"></bbva-login>
         </div>
         <div ?hidden="${this.showDashboard}">
-            <bbva-dashboard .banco="${this.bank}" @ver-detalles="${this.handleViewDetails}"></bbva-dashboard>
+            <bbva-dashboard .banco="${this.bank}" @ver-detalles="${this.handleViewDetails}" @cierra-sesion="${this.handleViewLogin}"></bbva-dashboard>
         </div>
         <div ?hidden="${this.showDetails}">
             <bbva-details .banco="${this.bank}" @volver-dashboard="${this.handleBackToDashboard}"></bbva-details>

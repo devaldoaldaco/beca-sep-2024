@@ -96,4 +96,22 @@ export const styleDashboard = css`
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
           
+            .volver-button {
+background-color: #007BFF;
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-top: 20px;
+cursor: pointer;
+border-radius: 5px;
+transition-duration: 0.4s;
+}
+
+.volver-button:hover {
+    background-color: #0056b3
+}
 `
