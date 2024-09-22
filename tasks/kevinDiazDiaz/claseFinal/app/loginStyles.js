@@ -1,8 +1,8 @@
 import {css} from 'lit';
 export const loginStyles = css`
     *{
-    margin: 0;
-    padding: 0;
+        margin: 0;
+        padding: 0;
     }
 
     article{
@@ -50,6 +50,7 @@ export const loginStyles = css`
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
+        z-index:0;
     }
 
     p{
@@ -64,6 +65,5 @@ export const loginStyles = css`
         background-color: aliceblue;
         font-size: 1.5rem;
     }
-
 
 `;

@@ -1,3 +1,4 @@
+import {css} from 'lit'
 export class Cuenta534 extends HTMLElement {
     constructor() {
         super();
