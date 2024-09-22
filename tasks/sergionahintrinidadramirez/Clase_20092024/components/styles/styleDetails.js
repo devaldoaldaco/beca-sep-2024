@@ -135,7 +135,6 @@ export const styleDetails = css`
 /* Ajustes de responsividad */
 @media (max-width: 600px) {
   .card-details {
-    width: 100%;
     height: auto;
     padding: 15px;
   }
