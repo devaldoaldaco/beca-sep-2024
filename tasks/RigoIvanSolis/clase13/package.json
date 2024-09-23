@@ -1,0 +1,24 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "This is a will component build with Element",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "keywords": [
+    "LitElement",
+    "WebComponent",
+    "web",
+    "HTML"
+  ],
+  "author": "dev.rigo.sol",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^4.1.0"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}
