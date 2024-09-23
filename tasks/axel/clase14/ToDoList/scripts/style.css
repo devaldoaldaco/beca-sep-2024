@@ -1,0 +1,55 @@
+p{
+    padding-left: 8em;
+}
+span{
+    display: inline-block;
+    width: 17em;
+    height: 29px;
+    margin-left: 5px;
+    border-radius: 3%;
+
+
+}
+li{
+    list-style-type: none;
+    background-color: #C3E2E9;
+
+    border-radius: 3%;
+    width: 24em; height: 39px;
+    margin-left: 1em;
+    margin-top: 1em;
+
+
+    
+}
+ul{
+    padding-left: 0;
+}
+input{
+    width: 25em; height: 29px;
+    border: 1px solid blue;
+    border-radius: 5%;
+
+    
+}
+button{
+    margin-left: 3px;
+}
+#btnDelete{
+    background-color: red; color:white;border: 0px;
+    width: 49px;
+    height: 39px;
+    border-radius: 10%;
+}
+#btnEdit{
+    background-color: #5D91FE; color: white;border: 0px;
+    width: 49px;
+    height: 39px;
+    border-radius: 10%;
+}
+#btnAgregar{
+    background-color: #2B6BEC;color:white; border: 0; height: 37px;width: 63px;border-radius: 10%;
+}
+#btnAceptarEdit{
+    background-color: green;color:white; border: 0; height: 37px;width: 63px;border-radius: 10%;
+}
