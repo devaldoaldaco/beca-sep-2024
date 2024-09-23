@@ -1,0 +1,7 @@
+{
+    "users": [
+        {"name": "laporte","lastName":"saelemaekers", "email": "annlaport23@gmail.com", "telefono":"5544667700", "password": "password", "account": "JZSR335566", "quantity": 20000},
+        {"name": "anne","lastName":"Albacil", "email": "ann_albacil@gmail.com", "telefono":"5545678921" ,"password":"laporte","account": "kJU335566", "quantity": 15000},
+        {"name": "Julio","lastName":"Santillan", "email": "copito_de_nieve@gmail.com", "telefono":"5544478921" ,"password":"123","account": "MX9808765", "quantity": 100000}
+    ]
+}
