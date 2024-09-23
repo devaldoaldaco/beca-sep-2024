@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2{
+  text-align: center;
+}
+main{
+  display: grid;
+  max-width: 700px;
+  grid-template-columns:repeat(auto-fill,minmax(150px, 1fr));
+  gap: 26px;
+
+} 
+article{
+  width: 150px;
+  height: 150px;
+}
+.image-container{
+  display: flex;
+}
+.image-container img{
+  width: 100%;
+  border-radius: 50%;
+}
