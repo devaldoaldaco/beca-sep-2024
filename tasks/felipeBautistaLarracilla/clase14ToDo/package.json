@@ -1,0 +1,23 @@
+{
+  "name": "clase14todo",
+  "version": "1.0.0",
+  "description": "Aplicacion ToDo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+
+  },
+  "keywords": [
+    "LitElement",
+    "ToDo"
+  ],
+  "author": "Felipe Bautista Larracilla",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^3.2.0"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}
