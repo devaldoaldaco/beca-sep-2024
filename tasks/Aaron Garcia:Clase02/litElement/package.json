@@ -1,0 +1,26 @@
+{
+  "name": "litelement",
+  "version": "1.0.0",
+  "description": "This is a web component build with LitElement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "keywords": [
+    "LitElement",
+    "webcomponent",
+    "web",
+    "html",
+    "js",
+    "css"
+  ],
+  "author": "dev.aaron.garcia",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^4.1.0"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}
