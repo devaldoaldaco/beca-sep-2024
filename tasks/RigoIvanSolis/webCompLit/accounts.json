@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Rigo Ivan Solis Hernandez",
+    "accountNumber": "00123456789",
+    "balance": 1500.75,
+    "email": "rigo.solis@example.com",
+    "transactions": [
+      { "date": "2024-09-01", "amount": -150.00, "description": "Pago factura" },
+      { "date": "2024-09-10", "amount": 500.00, "description": "Depósito" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Roberto Palacios Salas",
+    "accountNumber": "00123456790",
+    "balance": 3200.50,
+    "email": "roberto.palacios@example.com",
+    "transactions": [
+      { "date": "2024-09-05", "amount": -500.00, "description": "Transferencia" },
+      { "date": "2024-09-12", "amount": 2000.00, "description": "Pago recibido" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cristina Cruz Zavala",
+    "accountNumber": "00123456791",
+    "balance": 780.20,
+    "email": "cristina.cruz@example.com",
+    "transactions": [
+      { "date": "2024-09-02", "amount": -80.00, "description": "Compra línea" },
+      { "date": "2024-09-11", "amount": 300.00, "description": "Depósito" }
+    ]
+  }
+]
